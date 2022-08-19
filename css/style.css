@@ -1,0 +1,45 @@
+.slide {
+    width: 100vw;
+    height: 100vw;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.one {
+    background: #efdefe;
+}
+
+.two {
+    background: #a3f3d3;
+}
+
+.three {
+    background: #0bbaa0;
+}
+
+.two {
+    background: #00dfdf;
+}
