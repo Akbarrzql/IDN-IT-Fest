@@ -1,6 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .slide {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 }
 
 .outer-wrapper {
@@ -29,7 +34,7 @@
 }
 
 .one {
-    background: #efdefe;
+    background: red;
 }
 
 .two {
@@ -40,6 +45,18 @@
     background: #0bbaa0;
 }
 
-.two {
-    background: #00dfdf;
+.four {
+    background: green;
+}
+
+.five {
+    background: #dbd80e;
+}
+
+.six {
+    background: #0f0cd4;
+}
+
+.seven {
+    background: #df00df;
 }
