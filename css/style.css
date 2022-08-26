@@ -1,40 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @font-face
-
 /*perintah untuk memanggil font eksternal*/
-    {
-    font-family: 'Jura';
+
+{
+    font-family: "Jura";
     /*memberikan nama bebas untuk font*/
-    src: url('/font/Jura-VariableFont_wght.ttf');
+    src: url("/font/Jura-VariableFont_wght.ttf");
     /*memanggil file font eksternalnya di folder nexa*/
 }
 
 @font-face
-
 /*perintah untuk memanggil font eksternal*/
-    {
-    font-family: 'Caveat';
+
+{
+    font-family: "Caveat";
     /*memberikan nama bebas untuk font*/
-    src: url('/font/Caveat-VariableFont_wght.ttf');
+    src: url("/font/Caveat-VariableFont_wght.ttf");
     /*memanggil file font eksternalnya di folder nexa*/
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #E4DCCF;
-    overflow-x: hidden;
+    background-color: #e4dccf;
+    /* overflow-x: hidden; */
 }
 
 .body {
     margin: 0 120px 0;
 }
+
 
 /* .bg{
     width: auto;
@@ -44,7 +43,9 @@ body {
     z-index: 1;
 } */
 
+
 /* navbar */
+
 nav #nav-con {
     width: 100%;
     margin: auto;
@@ -62,33 +63,35 @@ nav {
     z-index: 1000;
 }
 
+
 /* */
 
-/* Judul */
 
-.container {
+/* header */
+
+.header-container {
     width: 100%;
-    padding-left: 35px;
     margin: 12.5rem 0;
 }
 
-.judul #judul1 {
+.header-judul {
     font-family: Montserrat;
     font-size: 64px;
-    color: #2C3333;
+    color: #2c3333;
     font-weight: 600;
 }
 
-.judul #sub-judul1 {
+.header-sub {
     font-family: Caveat;
     font-size: 96px;
     font-weight: 400;
     padding-left: 150px;
-    margin-top: -1.5rem;
-    color: #7D9D9C;
+    color: #7d9d9c;
 }
 
+
 /*  */
+
 
 /* kenapa */
 
@@ -101,32 +104,27 @@ nav {
 .why #judul {
     font-family: Montserrat;
     font-size: 64px;
-    color: #2C3333;
+    color: #2c3333;
 }
 
 .why #sub-judul {
     font-family: Caveat;
     font-size: 96px;
     margin-top: -40px;
-    color: #7D9D9C;
+    color: #7d9d9c;
 }
 
 .why #text {
     font-size: 24px;
-    color: #2C3333;
+    color: #2c3333;
     font-family: Jura;
 }
 
+
 /*  */
 
-/* proses */
 
-
-.container-card2 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
+/* process */
 
 .container-process {
     display: flex;
@@ -142,11 +140,11 @@ nav {
 }
 
 .process-number {
-    font-family: 'Jura';
+    font-family: "Jura";
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
-    color: #F0EBE3;
+    color: #f0ebe3;
     z-index: 2;
     position: relative;
     bottom: -30px;
@@ -160,31 +158,36 @@ nav {
 }
 
 .process-subtema {
-    font-family: 'Jura';
+    font-family: "Jura";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
 }
 
 .process-text {
-    font-family: 'Jura';
+    font-family: "Jura";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
 }
 
-
-
+.container-card2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 
 
 /*  */
+
+
 /* jenis-jenis */
 
 #sec4 .card {
     position: relative;
     width: 13rem;
     height: 10rem;
-    background-color: #395B64;
+    background-color: #395b64;
     padding: 25px 15px;
     display: flex;
     flex-direction: column;
@@ -258,10 +261,10 @@ nav {
     font-family: Jura;
 }
 
+
 /*  */
 
-
-@media only screen and (max-width:320px) {
+@media only screen and (max-width: 320px) {
     .jenis-introvert {
         flex-direction: column;
     }
