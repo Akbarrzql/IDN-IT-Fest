@@ -27,7 +27,7 @@
 
 body {
     background-color: #e4dccf;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .body {
@@ -67,25 +67,27 @@ nav {
 /* */
 
 
-/* header */
+/* Judul */
 
-.header-container {
+.container {
     width: 100%;
+    padding-left: 35px;
     margin: 12.5rem 0;
 }
 
-.header-judul {
+.judul #judul1 {
     font-family: Montserrat;
     font-size: 64px;
     color: #2c3333;
     font-weight: 600;
 }
 
-.header-sub {
+.judul #sub-judul1 {
     font-family: Caveat;
     font-size: 96px;
     font-weight: 400;
     padding-left: 150px;
+    margin-top: -1.5rem;
     color: #7d9d9c;
 }
 
@@ -124,7 +126,13 @@ nav {
 /*  */
 
 
-/* process */
+/* proses */
+
+.container-card2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 
 .container-process {
     display: flex;
@@ -171,19 +179,13 @@ nav {
     font-size: 16px;
 }
 
-.container-card2 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
 
-sss
 /*  */
 
 
 /* jenis-jenis */
 
-#sec4 .card {
+.jenis-card {
     position: relative;
     width: 13rem;
     height: 10rem;
@@ -197,11 +199,11 @@ sss
     border-radius: 15px 0 15px 0;
 }
 
-#sec4 .card:hover {
+.jenis-card:hover {
     height: 22rem;
 }
 
-#sec4 .card .image {
+.jenis-container-image {
     position: relative;
     width: 12.5rem;
     top: 0%;
@@ -212,23 +214,20 @@ sss
     text-align: center;
 }
 
-#sec4 .card .image img {
+.jenis-image {
     max-width: 100%;
 }
 
-#sec4 .card .image h4 {
+.jenis-judul {
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 800;
     text-align: center;
     cursor: default;
-}
-
-#sec4 .card h4 {
     padding-top: 10px;
 }
 
-#sec4 .card .content {
+.jenis-content {
     position: relative;
     top: -80px;
     left: 0.1rem;
@@ -239,7 +238,7 @@ sss
     transition: 0.3s ease-in-out;
 }
 
-#sec4 .card .content p {
+.jenis-deskripsi {
     font-size: 0.8rem;
     font-weight: 500;
     padding: 0 4px;
@@ -247,7 +246,7 @@ sss
     cursor: default;
 }
 
-#sec4 .card:hover .content {
+.jenis-card:hover .jenis-content {
     margin-top: 5.5rem;
     visibility: visible;
     opacity: 1;
