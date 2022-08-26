@@ -1,45 +1,268 @@
-.slide {
-    width: 100vw;
-    height: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face
+
+/*perintah untuk memanggil font eksternal*/
+    {
+    font-family: 'Jura';
+    /*memberikan nama bebas untuk font*/
+    src: url('/font/Jura-VariableFont_wght.ttf');
+    /*memanggil file font eksternalnya di folder nexa*/
 }
 
-.outer-wrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
+@font-face
+
+/*perintah untuk memanggil font eksternal*/
+    {
+    font-family: 'Caveat';
+    /*memberikan nama bebas untuk font*/
+    src: url('/font/Caveat-VariableFont_wght.ttf');
+    /*memanggil file font eksternalnya di folder nexa*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #E4DCCF;
     overflow-x: hidden;
-    overflow-y: scroll;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.body {
+    margin: 0 120px 0;
 }
 
-.wrapper {
-    overflow: hidden;
+/* .bg{
+    width: auto;
+    height: 805px;
+    margin: 0 -10rem;
+    background-color: #698A8C;
+    z-index: 1;
+} */
+
+/* navbar */
+nav #nav-con {
+    width: 100%;
+    margin: auto;
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #ff0000;
+    z-index: 1000;
+}
+
+/* */
+
+/* Judul */
+
+.container {
+    width: 100%;
+    padding-left: 35px;
+    margin: 12.5rem 0;
+}
+
+.judul #judul1 {
+    font-family: Montserrat;
+    font-size: 64px;
+    color: #2C3333;
+    font-weight: 600;
+}
+
+.judul #sub-judul1 {
+    font-family: Caveat;
+    font-size: 96px;
+    font-weight: 400;
+    padding-left: 150px;
+    margin-top: -1.5rem;
+    color: #7D9D9C;
+}
+
+/*  */
+
+/* kenapa */
+
+.why {
+    text-align: center;
+    margin: 5rem;
+    padding: auto;
+}
+
+.why #judul {
+    font-family: Montserrat;
+    font-size: 64px;
+    color: #2C3333;
+}
+
+.why #sub-judul {
+    font-family: Caveat;
+    font-size: 96px;
+    margin-top: -40px;
+    color: #7D9D9C;
+}
+
+.why #text {
+    font-size: 24px;
+    color: #2C3333;
+    font-family: Jura;
+}
+
+/*  */
+
+/* proses */
+
+
+.container-card2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.container-process {
+    display: flex;
+    flex-direction: column;
+}
+
+.proces h1 {}
+
+.card,
+.card2 {
+    width: 456px;
+    padding: auto;
+}
+
+.process-number {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    color: #F0EBE3;
+    z-index: 2;
+    position: relative;
+    bottom: -30px;
+    left: -1.5rem;
+}
+
+.process-img {
+    width: 426px;
+    height: 306px;
+    z-index: 1;
+}
+
+.process-subtema {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.process-text {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+
+
+/*  */
+/* jenis-jenis */
+
+#sec4 .card {
+    position: relative;
+    width: 13rem;
+    height: 10rem;
+    background-color: #395B64;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease-in-out;
+    border: none;
+    border-radius: 15px 0 15px 0;
+}
+
+#sec4 .card:hover {
+    height: 22rem;
+}
+
+#sec4 .card .image {
+    position: relative;
+    width: 12.5rem;
+    top: 0%;
+    left: -1rem;
+    z-index: 1;
+    border-radius: 15px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#sec4 .card .image img {
+    max-width: 100%;
+}
+
+#sec4 .card .image h4 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+    cursor: default;
+}
+
+#sec4 .card h4 {
+    padding-top: 10px;
+}
+
+#sec4 .card .content {
+    position: relative;
+    top: -80px;
+    left: 0.1rem;
+    color: #ffffff;
+    text-align: center;
+    visibility: visible;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#sec4 .card .content p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 4px;
+    letter-spacing: 0.02rem;
+    cursor: default;
+}
+
+#sec4 .card:hover .content {
+    margin-top: 5.5rem;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.jenis-introvert {
     display: flex;
     flex-direction: row;
-    width: 400vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
+    column-gap: 25px;
+    font-family: Jura;
 }
 
-.one {
-    background: #efdefe;
-}
+/*  */
 
-.two {
-    background: #a3f3d3;
-}
 
-.three {
-    background: #0bbaa0;
-}
-
-.two {
-    background: #00dfdf;
+@media only screen and (max-width:320px) {
+    .jenis-introvert {
+        flex-direction: column;
+    }
 }
