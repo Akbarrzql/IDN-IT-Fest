@@ -31,7 +31,7 @@ body {
 }
 
 .body {
-    margin: 0 10rem 0;
+    margin: 0 8rem 0;
 }
 
 /* navbar */
@@ -49,7 +49,7 @@ nav {
     display: flex;
     position: sticky;
     top: 0;
-    background-color: #ff0000;
+    background-color: #dcc9b5;
     z-index: 1000;
 }
 
@@ -194,6 +194,10 @@ nav {
 
 /* jenis-jenis */
 
+.jenis-container{
+    
+}
+
 .jenis-introvert {
     display: flex;
     flex-direction: row;
@@ -205,7 +209,7 @@ nav {
     text-align: center;
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
     /* line-height: 3.6; */
     padding-bottom: 3.3rem;
 }
@@ -215,11 +219,11 @@ nav {
     width: 13rem;
     height: 10rem;
     background-color: #395b64;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.9rem;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.1);
-    transition: 0.4s ease-in-out;
+    transition: 0.6s ease-in-out;
     border: none;
     border-radius: 0.9rem 0 0.9rem 0;
 }
@@ -260,7 +264,7 @@ nav {
     text-align: center;
     visibility: visible;
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .jenis-deskripsi {
@@ -278,9 +282,108 @@ nav {
     transition-delay: 0.1s;
 }
 
+/*  */
+
+/* Menjadi Diri Sendiri(MDS) */
+
+.MDS{
+    margin: 12rem 0;
+    padding: auto;
+}
+
+.container-mds{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto auto;
+    margin-top: 3rem;
+}
+
+.judul-mds-head{
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #14142B;
+}
+
+.garis-mds{
+    height: 0.1rem;
+    background-color: #14142B;
+    margin-top: 1rem;
+}
+
+.card-mds{
+    width: 19.6rem;
+    height: 14.7rem;
+    background-color: #395B64;
+    border-radius: 1rem;
+}
+
+.judul-mds{
+    font-family: poppins;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 600;
+    padding-top: 1.625rem;
+    padding-left: 1.5625rem;
+}
 
 /*  */
 
+/* meditasi */
+
+.container-meditasi{
+    display: flex;
+    margin: 7rem 0;
+}
+
+.card-meditasi{
+    width: 47.6875rem;
+    height: 23.125rem;
+    background-color:#395B64;
+    /* padding: 1rem; */
+}
+
+.image-meditasi{
+    width: 23.125rem;
+    height: 23.125rem;
+    background-color: #14142B;
+}
+
+.judul-meditasi{
+    font-family: Jura;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 2rem 2rem 0 2rem;
+    color: #ffffff;
+}
+
+.text-meditasi{
+    font-size: 1rem;
+    font-family: Jura;
+    font-weight: 600;
+    color: #F5F5F7;
+    padding: 0 2rem 0 2rem;
+}
+
+.button-meditasi{
+    padding: 0.5rem 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    border-radius: 2;
+    border-color: #ffffff;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: Jura;
+    font-weight: 600;
+}
+
+/*  */
 @media only screen and (max-width: 320px) {
     .jenis-introvert {
         flex-direction: column;
