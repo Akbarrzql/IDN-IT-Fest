@@ -60,7 +60,7 @@ nav {
 /* Judul */
 
 .header-container {
-    margin: 12.5rem 2rem;
+    margin: 17rem 0;
     display: flex;
 }
 
@@ -75,7 +75,7 @@ nav {
     font-family: Caveat;
     font-size: 5.5rem;
     font-weight: 400;
-    padding-left: 10rem;
+    padding-left: 5rem;
     margin-top: -1.5rem;
     color: #7d9d9c;
 }
@@ -101,7 +101,7 @@ nav {
 
 .why {
     text-align: center;
-    margin: 5rem;
+    margin: 8rem 8rem 18rem 8rem;
     padding: auto;
 }
 
@@ -140,7 +140,7 @@ nav {
 .container-process {
     display: flex;
     flex-direction: column;
-    margin: 10rem 0;
+    margin: 10rem 3rem;
 }
 
 .process-judul {
@@ -208,13 +208,17 @@ nav {
 
 /* jenis-jenis */
 
-.jenis-container {}
+.jenis-container {
+    align-items: center;
+    margin: 5rem 0 25rem 0;
+}
 
 .jenis-introvert {
     display: flex;
     flex-direction: row;
     column-gap: 1.5rem;
     font-family: Jura;
+    /* margin: 0 5rem; */
 }
 
 .jenis-judul-head {
@@ -228,10 +232,10 @@ nav {
 
 .jenis-card {
     position: relative;
-    width: 13rem;
-    height: 10rem;
+    width: 17.5625rem;
+    height: 17.5625rem;
     background-color: #395b64;
-    padding: 1.5rem 0.9rem;
+    /* padding: 1.5rem 0.9rem; */
     display: flex;
     flex-direction: column;
     box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.1);
@@ -241,14 +245,14 @@ nav {
 }
 
 .jenis-card:hover {
-    height: 23rem;
+    height: 27rem;
 }
 
 .jenis-container-image {
     position: relative;
     width: 12.5rem;
-    top: 0%;
-    left: -1rem;
+    top: 3rem;
+    left: 1rem;
     z-index: 1;
     border-radius: 1rem;
     padding: 0 1.25rem;
@@ -282,8 +286,8 @@ nav {
 .jenis-deskripsi {
     font-size: 0.8rem;
     font-weight: 500;
-    padding: 0 0.25rem;
-    letter-spacing: 0.02rem;
+    padding: 4rem 2rem;
+    /* letter-spacing: 0.02rem; */
     cursor: default;
 }
 
@@ -301,15 +305,16 @@ nav {
 /* Menjadi Diri Sendiri(MDS) */
 
 .MDS {
-    margin: 12rem 0;
-    padding: auto;
+    margin: 10rem 0;
+    /* padding: auto; */
     font-family: Jura;
 }
 
 .container-mds {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: auto auto auto;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    grid-template-columns: auto auto auto auto;
     margin-top: 3rem;
 }
 
@@ -327,19 +332,18 @@ nav {
 }
 
 .card-mds {
-    width: 19.6rem;
-    height: 14.7rem;
+    width: 17.0625rem;
+    height: 10.6875rem;
     background-color: #395b64;
     border-radius: 1rem;
 }
 
 .judul-mds {
     font-family: Jura;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #ffffff;
     font-weight: 600;
-    padding-top: 1.625rem;
-    padding-left: 1.5625rem;
+    padding: 1.625rem 0.5rem 0 1.625rem;
 }
 
 
@@ -350,13 +354,14 @@ nav {
 
 .container-meditasi {
     display: flex;
-    margin: 7rem 0;
+    margin: 15rem 0;
 }
 
 .card-meditasi {
     width: 47.6875rem;
     height: 23.125rem;
     background-color: #395b64;
+    padding: 0 7rem 0 8rem;
     /* padding: 1rem; */
 }
 
@@ -369,9 +374,10 @@ nav {
 .judul-meditasi {
     font-family: Jura;
     font-weight: 600;
-    font-size: 3rem;
-    padding: 2rem 2rem 0 2rem;
+    font-size: 2.25rem;
+    padding: 2rem 2rem 0 0;
     color: #ffffff;
+    /* margin-left: 8rem; */
 }
 
 .text-meditasi {
@@ -379,17 +385,18 @@ nav {
     font-family: Jura;
     font-weight: 600;
     color: #f5f5f7;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem 0 0;
+    /* margin-left: 8rem; */
 }
 
 .button-meditasi {
     padding: 0.5rem 2rem;
-    margin-left: 2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     border-radius: 2;
     border-color: #ffffff;
     background-color: transparent;
     border-radius: 1rem;
+    /* margin-left: 8rem; */
 }
 
 a {
@@ -405,7 +412,7 @@ a {
 
 .quotes-penyemangat {
     text-align: center;
-    margin: 7rem 10rem;
+    margin: 15rem 10rem;
 }
 
 .text-penyemangat {
