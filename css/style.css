@@ -61,6 +61,7 @@ nav {
 
 .header-container {
     margin: 12.5rem 2rem;
+    display: flex;
 }
 
 .header-judul {
@@ -79,6 +80,18 @@ nav {
     color: #7d9d9c;
 }
 
+.alltext-header{
+    margin: 0 8rem 0 0;
+}
+
+.container-slide{
+    margin-top: -7%;
+}
+
+.image-slide{
+    height: 20rem;
+    width: 30rem;
+}
 
 /*  */
 
@@ -229,7 +242,7 @@ nav {
 }
 
 .jenis-card:hover {
-    height: 25rem;
+    height: 23rem;
 }
 
 .jenis-container-image {
@@ -273,6 +286,7 @@ nav {
     padding: 0 0.25rem;
     letter-spacing: 0.02rem;
     cursor: default;
+
 }
 
 .jenis-card:hover .jenis-content {
@@ -368,7 +382,7 @@ nav {
 .button-meditasi{
     padding: 0.5rem 2rem;
     margin-left: 2rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     border-radius: 2;
     border-color: #ffffff;
     background-color: transparent;
@@ -384,6 +398,25 @@ a{
 }
 
 /*  */
+
+.quotes-penyemangat{
+    text-align: center;
+    margin: 7rem 10rem;
+}
+
+.text-penyemangat{
+    color: #698A8C;
+    font-family: Caveat;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.dari-penyemangat{
+    font-family: Jura;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 @media only screen and (max-width: 320px) {
     .jenis-introvert {
         flex-direction: column;
