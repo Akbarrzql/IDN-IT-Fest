@@ -2,8 +2,8 @@
 @font-face
 /*perintah untuk memanggil font eksternal*/
 
-    {
-    font-family: "Jura";
+{
+    font-family: Jura;
     /*memberikan nama bebas untuk font*/
     src: url("/font/Jura-VariableFont_wght.ttf");
     /*memanggil file font eksternalnya di folder nexa*/
@@ -12,15 +12,14 @@
 @font-face
 /*perintah untuk memanggil font eksternal*/
 
-    {
+{
     font-family: "Caveat";
     /*memberikan nama bebas untuk font*/
     src: url("/font/Caveat-VariableFont_wght.ttf");
     /*memanggil file font eksternalnya di folder nexa*/
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=:wght@600&display=swap");
 * {
     padding: 0;
     margin: 0;
@@ -33,6 +32,7 @@ body {
 .body {
     margin: 0 8rem 0;
 }
+
 
 /* navbar */
 
@@ -65,7 +65,7 @@ nav {
 }
 
 .header-judul {
-    font-family: Montserrat;
+    font-family: Jura;
     font-size: 4rem;
     color: #2c3333;
     font-weight: 600;
@@ -80,18 +80,19 @@ nav {
     color: #7d9d9c;
 }
 
-.alltext-header{
+.alltext-header {
     margin: 0 8rem 0 0;
 }
 
-.container-slide{
+.container-slide {
     margin-top: -7%;
 }
 
-.image-slide{
+.image-slide {
     height: 20rem;
     width: 30rem;
 }
+
 
 /*  */
 
@@ -105,7 +106,7 @@ nav {
 }
 
 .why #judul {
-    font-family: Montserrat;
+    font-family: Jura;
     font-size: 4rem;
     color: #2c3333;
 }
@@ -145,7 +146,7 @@ nav {
 .process-judul {
     color: #ffffff;
     font-size: 3.8rem;
-    font-family: Montserrat;
+    font-family: Jura;
     font-weight: 800;
 }
 
@@ -170,7 +171,7 @@ nav {
 }
 
 .process-number {
-    font-family: "Jura";
+    font-family: Jura;
     font-style: normal;
     font-weight: 600;
     font-size: 4rem;
@@ -188,14 +189,14 @@ nav {
 }
 
 .process-subtema {
-    font-family: "Jura";
+    font-family: Jura;
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
 .process-text {
-    font-family: "Jura";
+    font-family: Jura;
     font-style: normal;
     font-weight: 600;
     font-size: 1rem;
@@ -207,9 +208,7 @@ nav {
 
 /* jenis-jenis */
 
-.jenis-container{
-    
-}
+.jenis-container {}
 
 .jenis-introvert {
     display: flex;
@@ -220,7 +219,7 @@ nav {
 
 .jenis-judul-head {
     text-align: center;
-    font-family: Montserrat;
+    font-family: Jura;
     font-weight: bold;
     font-size: 4rem;
     /* line-height: 3.6; */
@@ -286,7 +285,6 @@ nav {
     padding: 0 0.25rem;
     letter-spacing: 0.02rem;
     cursor: default;
-
 }
 
 .jenis-card:hover .jenis-content {
@@ -296,43 +294,45 @@ nav {
     transition-delay: 0.1s;
 }
 
+
 /*  */
+
 
 /* Menjadi Diri Sendiri(MDS) */
 
-.MDS{
+.MDS {
     margin: 12rem 0;
     padding: auto;
 }
 
-.container-mds{
+.container-mds {
     display: grid;
     gap: 2rem;
     grid-template-columns: auto auto auto;
     margin-top: 3rem;
 }
 
-.judul-mds-head{
-    font-family: Montserrat;
+.judul-mds-head {
+    font-family: Jura;
     font-size: 4rem;
     font-weight: 600;
-    color: #14142B;
+    color: #14142b;
 }
 
-.garis-mds{
+.garis-mds {
     height: 0.1rem;
-    background-color: #14142B;
+    background-color: #14142b;
     margin-top: 1rem;
 }
 
-.card-mds{
+.card-mds {
     width: 19.6rem;
     height: 14.7rem;
-    background-color: #395B64;
+    background-color: #395b64;
     border-radius: 1rem;
 }
 
-.judul-mds{
+.judul-mds {
     font-family: poppins;
     font-size: 1.8rem;
     color: #ffffff;
@@ -341,29 +341,31 @@ nav {
     padding-left: 1.5625rem;
 }
 
+
 /*  */
+
 
 /* meditasi */
 
-.container-meditasi{
+.container-meditasi {
     display: flex;
     margin: 7rem 0;
 }
 
-.card-meditasi{
+.card-meditasi {
     width: 47.6875rem;
     height: 23.125rem;
-    background-color:#395B64;
+    background-color: #395b64;
     /* padding: 1rem; */
 }
 
-.image-meditasi{
+.image-meditasi {
     width: 23.125rem;
     height: 23.125rem;
-    background-color: #14142B;
+    background-color: #14142b;
 }
 
-.judul-meditasi{
+.judul-meditasi {
     font-family: Jura;
     font-weight: 600;
     font-size: 3rem;
@@ -371,15 +373,15 @@ nav {
     color: #ffffff;
 }
 
-.text-meditasi{
+.text-meditasi {
     font-size: 1rem;
     font-family: Jura;
     font-weight: 600;
-    color: #F5F5F7;
+    color: #f5f5f7;
     padding: 0 2rem 0 2rem;
 }
 
-.button-meditasi{
+.button-meditasi {
     padding: 0.5rem 2rem;
     margin-left: 2rem;
     margin-top: 4rem;
@@ -389,7 +391,7 @@ nav {
     border-radius: 1rem;
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 1.5rem;
     color: #ffffff;
@@ -397,21 +399,22 @@ a{
     font-weight: 600;
 }
 
+
 /*  */
 
-.quotes-penyemangat{
+.quotes-penyemangat {
     text-align: center;
     margin: 7rem 10rem;
 }
 
-.text-penyemangat{
-    color: #698A8C;
+.text-penyemangat {
+    color: #698a8c;
     font-family: Caveat;
     font-weight: 700;
     font-size: 4rem;
 }
 
-.dari-penyemangat{
+.dari-penyemangat {
     font-family: Jura;
     font-weight: 600;
     font-size: 1.5rem;
