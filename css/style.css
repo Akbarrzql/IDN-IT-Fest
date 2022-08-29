@@ -303,6 +303,7 @@ nav {
 .MDS {
     margin: 12rem 0;
     padding: auto;
+    font-family: Jura;
 }
 
 .container-mds {
@@ -333,7 +334,7 @@ nav {
 }
 
 .judul-mds {
-    font-family: poppins;
+    font-family: Jura;
     font-size: 1.8rem;
     color: #ffffff;
     font-weight: 600;
