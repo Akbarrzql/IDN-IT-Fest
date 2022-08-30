@@ -454,7 +454,7 @@ nav {
 }
 
 .card-mds:hover {
-    transform: translateY(-3px) scale(1.1);
+    transform: translateY(-3px) scale(1.05);
 }
 
 .card-tall {
@@ -470,7 +470,7 @@ nav {
     font-size: 1.6rem;
     color: #ffffff;
     font-weight: 600;
-    padding: 1.625rem 0.5rem 0 1.625rem;
+    padding: 0 0.5rem 0 1.625rem;
 }
 
 .animated-grid {
