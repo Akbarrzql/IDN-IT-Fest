@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=:wght@600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e4dccf;
+}
+
+.body {
+    margin: -45rem 8rem;
+}
+
+.content{
+    text-align: center;
+    font-family: Jura;
+    font-weight: 400;
+    margin-top: 10rem;
+}
+
+.up-content{
+    width: 100%;
+}
+
+.title-content{
+    font-size: 2.875rem;
+    color: #ffff;
+    margin: 2rem;
+}
+
+.img-content{
+    width: 61.5rem;
+    height: 42.5625rem;
+}
+
+.text-content{
+    padding: 2rem 5rem;
+    font-size: 1.875rem;
+}
