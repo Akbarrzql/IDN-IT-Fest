@@ -1,41 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=:wght@600&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #e4dccf;
+  background-color: #e4dccf;
 }
+/* navbar */
 
-.body {
-    margin: -45rem 8rem;
-}
-
-.content{
-    text-align: center;
-    font-family: Jura;
-    font-weight: 400;
-    margin-top: 10rem;
-}
-
-.up-content{
+nav #nav-con {
     width: 100%;
+    margin: auto;
+    padding: 12px 0;
+    text-align: center;
 }
 
-.title-content{
-    font-size: 2.875rem;
-    color: #ffff;
-    margin: 2rem;
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #dcc9b5;
+    z-index: 1000;
 }
 
-.img-content{
-    width: 61.5rem;
-    height: 42.5625rem;
+
+/* */
+.body {
+  margin: -45rem 8rem;
 }
 
-.text-content{
-    padding: 2rem 5rem;
-    font-size: 1.875rem;
+.content {
+  text-align: center;
+  font-family: Jura;
+  font-weight: 400;
+  margin-top: 10rem;
 }
+
+.up-content {
+  width: 100%;
+  height: 40rem;
+}
+
+.title-content {
+  font-family: Jura;
+  font-size: 2.875rem;
+  color: #ffff;
+  margin: 2rem;
+  padding-bottom: 3rem;
+}
+
+.img-content {
+  width: 61.5rem;
+  height: 42.5625rem;
+}
+
+.text-content {
+  padding: 2rem 8.45rem;
+  text-align: start;
+  font-size: 1.1428571428571428rem;
+  line-height: 1.8571428571428572rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: Jura;
+    font-weight: 600;
+}
+
