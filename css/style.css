@@ -488,7 +488,7 @@ nav {
     }
 }
 
-.card-mds:nth-child(1) {
+.card-mds:nth-child(6) {
     animation-delay: calc(1 * var(--stagger-delay));
 }
 
@@ -528,7 +528,7 @@ nav {
     animation-delay: calc(19 * var(--stagger-delay));
 }
 
-.card-mds:nth-child(6) {
+.card-mds:nth-child(1) {
     animation-delay: calc(21 * var(--stagger-delay));
 }
 
