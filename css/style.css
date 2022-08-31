@@ -223,7 +223,7 @@ nav {
 
 .background-process {
     background: #698a8c;
-    padding: 5rem 0 5rem 0;
+    padding: 5rem 0 1rem 0;
 }
 
 .container-card2 {
@@ -236,6 +236,10 @@ nav {
 .container-process {
     display: flex;
     flex-direction: column;
+    margin: 0 8rem;
+}
+
+.container-card-process {
     margin: 0 8rem;
 }
 
@@ -266,6 +270,14 @@ nav {
     padding: auto;
 }
 
+.card {
+    margin-left: 5rem;
+}
+
+.card2 {
+    margin-right: 5rem;
+}
+
 .process-number {
     font-family: Jura;
     font-style: normal;
@@ -279,9 +291,8 @@ nav {
 }
 
 .process-img {
-    width: 26.6rem;
-    height: 19.1rem;
-    z-index: 1;
+    width: 36.6rem;
+    height: 25.1rem;
 }
 
 .process-subtema {
@@ -289,6 +300,7 @@ nav {
     font-style: normal;
     font-weight: 600;
     font-size: 2.2rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .process-text {
@@ -297,21 +309,49 @@ nav {
     font-weight: 600;
     font-size: 1.2rem;
     color: white;
-    width: 90%;
+    width: 120%;
 }
 
 .process-special {
-    margin-top: -12rem;
+    margin-top: -15rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    .process-text-head {
+        font-size: 1.2rem;
+        font-family: Jura;
+        color: #ffffff;
+        width: 60%;
+        margin-left: 1rem;
+    }
+    .card {
+        margin-left: 0;
+    }
+    .card2 {
+        margin-right: 5rem;
+    }
+    .process-img {
+        width: 34.6rem;
+        height: 24.1rem;
+    }
+    .container-card-process {
+        margin: 0;
+    }
 }
 
 
-/*  */
+/* End of Process  */
+
+.curly-things {
+    width: 100%;
+    object-fit: cover;
+}
 
 
-/* jenis-jenis */
+/* Point Penting */
 
 .jenis {
-    margin: 5rem 0 25rem 0;
+    margin: 5rem 0 20rem 0;
 }
 
 .jenis-introvert {
@@ -321,6 +361,7 @@ nav {
     justify-content: center;
     column-gap: 1.5rem;
     height: 20rem;
+    margin-top: 1rem;
     font-family: Jura;
 }
 
@@ -402,7 +443,7 @@ nav {
 /*  */
 
 
-/* Menjadi Diri Sendiri(MDS) */
+/* Tips dan Trick */
 
 .MDS {
     margin: 10rem 8rem;
@@ -437,8 +478,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #353535;
-    font-size: 2rem;
+    background: #395b64;
     border-radius: 1rem;
     color: #fff;
     height: 100%;
@@ -467,10 +507,11 @@ nav {
 
 .judul-mds {
     font-family: Jura;
-    font-size: 1.6rem;
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem;
     color: #ffffff;
     font-weight: 600;
-    padding: 0 0.5rem 0 1.625rem;
 }
 
 .animated-grid {
@@ -565,6 +606,9 @@ nav {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         grid-auto-rows: 180px;
     }
+    .judul-mds {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 1226px) {
@@ -577,9 +621,6 @@ nav {
     .container-mds {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         grid-auto-rows: 180px;
-    }
-    .card {
-        font-size: 1.5rem;
     }
 }
 
@@ -597,7 +638,7 @@ nav {
 }
 
 
-/*  */
+/* End of Tips dan Trick  */
 
 
 /* meditasi */
@@ -656,6 +697,45 @@ nav {
 .image-meditasi {
     height: 33rem;
     width: 40rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    .container-meditasi {
+        align-items: center;
+        font-family: Jura;
+    }
+    .card-meditasi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 91%;
+        background-color: #395b64;
+        height: 28rem;
+    }
+    .button-meditasi:hover {
+        background-color: #ffffff;
+        color: #395b64;
+    }
+    .image-meditasi {
+        height: 28rem;
+        width: 32rem;
+    }
+    .text-meditasi {
+        display: flex;
+        flex-direction: column;
+        padding: 7rem 0 0 0;
+        margin: 0 4rem;
+    }
+    .title-meditasi {
+        font-size: 2.1rem;
+    }
+    .desc-meditasi {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .button-meditasi {
+        width: 35%;
+    }
 }
 
 
