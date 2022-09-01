@@ -14,6 +14,7 @@
 
 body {
   background-color: #e4dccf;
+  text-decoration: none;
 }
 /* navbar */
 
@@ -36,7 +37,7 @@ nav {
 
 /* */
 .body {
-  margin: -45rem 8rem;
+  margin: -45rem 0;
 }
 
 .content {
@@ -53,28 +54,140 @@ nav {
 
 .title-content {
   font-family: Jura;
-  font-size: 2.875rem;
+  font-size: 2rem;
   color: #ffff;
   margin: 2rem;
-  padding-bottom: 3rem;
 }
 
 .img-content {
-  width: 61.5rem;
-  height: 42.5625rem;
+  width: 60%;
+  height: auto;
 }
 
 .text-content {
-  padding: 2rem 8.45rem;
+  padding: 2rem 12.45rem;
   text-align: start;
-  font-size: 1.1428571428571428rem;
+  font-size: 1.5428571428571428rem;
   line-height: 1.8571428571428572rem;
 }
 
-a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #ffffff;
-  font-family: Jura;
-  font-weight: 600;
+@media only screen and (max-width: 1024px) {
+  .img-content {
+    width: 75%;
+    height: auto;
+  }
+
+  .text-content{
+    padding: 2rem 5rem;
+  }
+
 }
+
+@media only screen and (max-width: 768px) {
+  .body {
+    margin: -26rem 0;
+  }
+
+  .up-content{
+    height: 26rem;
+    width: 100%;
+  }
+  .content {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .img-content{
+    width: 65%;
+    height: auto;
+  }
+
+  .title-content{
+    font-size: 1.8rem;
+  }
+
+  .text-content{
+    padding: 2rem 4rem;
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .body{
+    margin: -19em 0;
+  }
+
+  .up-content{
+    height: 21rem;
+    width: 100%;
+  }
+  .title-content{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .img-content{
+    width: 55%;
+    height: auto;
+  }
+
+  .text-content{
+    font-size: 0.85rem;
+    font-weight: 550;
+    line-height: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .body{
+    margin: -17em 0;
+  }
+
+  .up-content{
+    height: 18rem;
+    width: 100%;
+  }
+
+  .text-content{
+    font-size: 0.70rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .img-content{
+    height: auto;
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .body{
+    margin: -13rem 0;
+  }
+
+  .up-content{
+    height: 15rem;
+    width: 100%;
+  }
+
+  .title-content{
+    font-size: 1.2rem;
+  }
+
+  .img-content{
+    height: auto;
+    width: 65%;
+  }
+
+  .text-content{
+    font-size: 0.70rem;
+    padding: 2rem 2rem;
+  }
+}
+
+/* @media only screen and (max-width: 380px) {
+  .body{
+    margin: -15rem 0;
+  }
+} */
