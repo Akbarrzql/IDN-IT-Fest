@@ -339,6 +339,66 @@ nav {
     }
 }
 
+@media only screen and (max-width: 1366px) {
+    .process-text-head {
+        font-size: 1.2rem;
+        font-family: Jura;
+        color: #ffffff;
+        width: 60%;
+        margin-left: 1rem;
+    }
+    .card {
+        margin-left: 0;
+    }
+    .card2 {
+        margin-right: 0;
+    }
+    .process-img {
+        width: 28.5rem;
+        height: 19.1rem;
+    }
+    .container-card-process {
+        margin: 0;
+    }
+    .process-text {
+        font-size: 1rem;
+        color: white;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .process-text-head {
+        font-size: 1.2rem;
+        font-family: Jura;
+        color: #ffffff;
+        width: 60%;
+        margin-left: 1rem;
+    }
+    .card {
+        margin-left: 0;
+    }
+    .card2 {
+        margin-right: 0;
+    }
+    .process-img {
+        width: 24.6rem;
+        height: 16.1rem;
+    }
+    .container-card-process {
+        margin: 0;
+    }
+    .process-subtema {
+        font-size: 1.75rem;
+        margin: 1rem 0 1rem 0;
+    }
+    .process-text {
+        font-size: 0.75rem;
+        color: white;
+        width: 90%;
+    }
+}
+
 
 /* End of Process  */
 
@@ -586,41 +646,78 @@ nav {
     }
 }
 
-@media only screen and (min-width: 2337px) {
+@media only screen and (min-width: 2311px) {
     .container-mds {
-        gap: 1.25rem;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 5fr));
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
         grid-auto-rows: 300px;
     }
 }
 
-@media only screen and (max-width: 1664px) {
-    .card-tall {
-        grid-row: span 2 / auto;
+@media only screen and (min-width: 2031px) {
+    .container-mds {
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-auto-rows: 300px;
     }
-    .card-wide {
-        grid-column: span 2 / auto;
-    }
+}
+
+@media only screen and (max-width: 1775px) {
     .container-mds {
         gap: 0.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        grid-auto-rows: 180px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-auto-rows: 240px;
+    }
+}
+
+@media only screen and (max-width: 1664px) {
+    .container-mds {
+        gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: 220px;
     }
     .judul-mds {
         font-size: 1rem;
     }
 }
 
-@media only screen and (max-width: 1226px) {
-    .card-tall {
-        grid-row: span 2 / auto;
-    }
-    .card-wide {
-        grid-column: span 2 / auto;
-    }
+@media only screen and (max-width: 1495px) {
     .container-mds {
+        gap: 0.5rem;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-auto-rows: 200px;
+    }
+    .judul-mds {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .container-mds {
+        gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         grid-auto-rows: 180px;
+    }
+}
+
+@media only screen and (max-width: 1256px) {
+    .container-mds {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-auto-rows: 160px;
+    }
+}
+
+@media only screen and (max-width: 1136px) {
+    .container-mds {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-auto-rows: 140px;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    .container-mds {
+        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+        grid-auto-rows: 135px;
     }
 }
 
