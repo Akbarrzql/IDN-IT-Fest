@@ -637,36 +637,14 @@ nav {
     animation-delay: calc(23 * var(--stagger-delay));
 }
 
-@media only screen and (min-width: 3042px) {
-    .card-tall {
-        grid-row: span 2 / auto;
-    }
-    .card-wide {
-        grid-column: span 3 / auto;
-    }
-}
-
-@media only screen and (min-width: 2311px) {
-    .container-mds {
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-        grid-auto-rows: 300px;
-    }
-}
-
-@media only screen and (min-width: 2031px) {
-    .container-mds {
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        grid-auto-rows: 300px;
-    }
-}
-
 @media only screen and (max-width: 1775px) {
     .container-mds {
         gap: 0.5rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         grid-auto-rows: 240px;
+    }
+    .judul-mds {
+        font-size: 1rem;
     }
 }
 
