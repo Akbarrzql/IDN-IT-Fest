@@ -266,16 +266,7 @@ nav {
 
 .card,
 .card2 {
-    width: 28.5rem;
-    padding: auto;
-}
-
-.card {
-    margin-left: 5rem;
-}
-
-.card2 {
-    margin-right: 5rem;
+    width: 36.5rem;
 }
 
 .process-number {
@@ -284,7 +275,6 @@ nav {
     font-weight: 600;
     font-size: 4rem;
     color: #f0ebe3;
-    z-index: 2;
     position: relative;
     bottom: -2rem;
     left: -1.5rem;
@@ -300,93 +290,150 @@ nav {
     font-style: normal;
     font-weight: 600;
     font-size: 2.2rem;
-    margin: 1rem 0 1rem 0;
+    margin: 0rem 0 0.5rem 0;
 }
 
 .process-text {
     font-family: Jura;
-    font-style: normal;
     font-weight: 600;
     font-size: 1.2rem;
     color: white;
-    width: 120%;
+    width: 105%;
 }
 
 .process-special {
     margin-top: -15rem;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1730px) {
     .process-text-head {
-        font-size: 1.2rem;
-        font-family: Jura;
-        color: #ffffff;
-        width: 60%;
-        margin-left: 1rem;
+        width: 49%;
     }
-    .card {
-        margin-left: 0;
-    }
+    .card,
     .card2 {
-        margin-right: 5rem;
+        width: 32.6rem;
     }
     .process-img {
-        width: 34.6rem;
-        height: 24.1rem;
+        width: 32.6rem;
+        height: 21.1rem;
     }
     .container-card-process {
-        margin: 0;
+        margin: 0 4rem;
     }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1440px) {
     .process-text-head {
-        font-size: 1.2rem;
-        font-family: Jura;
-        color: #ffffff;
         width: 60%;
-        margin-left: 1rem;
     }
-    .card {
-        margin-left: 0;
-    }
+    .card,
     .card2 {
-        margin-right: 0;
+        width: 30.6rem;
     }
     .process-img {
-        width: 28.5rem;
+        width: 30.6rem;
         height: 19.1rem;
     }
     .container-card-process {
-        margin: 0;
+        margin: 0 3rem;
+    }
+    .process-number {
+        font-size: 3rem;
+        position: relative;
+        bottom: -1.6rem;
+        left: -1.1rem;
     }
     .process-text {
         font-size: 1rem;
-        color: white;
-        width: 90%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1388px) {
+    .process-text-head {
+        width: 68%;
+    }
+    .card,
+    .card2 {
+        width: 26.6rem;
+    }
+    .process-img {
+        width: 26.6rem;
+        height: 15.1rem;
+    }
+    .container-card-process {
+        margin: 0 2rem;
+    }
+    .process-special {
+        margin-top: -12rem;
+    }
+    .container-card2 {
+        margin-top: -13rem;
+    }
+    .process-subtema {
+        font-size: 1.8rem;
+        margin: 0rem 0 0.5rem 0;
+    }
+    .process-text {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .card,
+    .card2 {
+        width: 24.6rem;
+    }
+    .process-img {
+        width: 24.6rem;
+        height: 15.1rem;
+    }
+    .container-card-process {
+        margin: 0 3rem;
+    }
+    .container-card2 {
+        margin-top: -12rem;
+    }
+    .process-special {
+        margin-top: -10rem;
+    }
+    .container-process {
+        margin: 0 4rem;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .process-text-head {
-        font-size: 1.2rem;
-        font-family: Jura;
-        color: #ffffff;
         width: 60%;
-        margin-left: 1rem;
     }
-    .card {
-        margin-left: 0;
-    }
+    .card,
     .card2 {
-        margin-right: 0;
+        width: 22.6rem;
     }
     .process-img {
-        width: 24.6rem;
-        height: 16.1rem;
+        width: 22.6rem;
+        height: 14.1rem;
     }
-    .container-card-process {
-        margin: 0;
+    .process-subtema {
+        font-size: 1.75rem;
+        margin: 1rem 0 1rem 0;
+    }
+    .process-text {
+        font-size: 0.75rem;
+        color: white;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card,
+    .card2 {
+        width: 24.6rem;
+    }
+    .process-img {
+        width: 22.6rem;
+        height: 11.1rem;
     }
     .process-subtema {
         font-size: 1.75rem;
