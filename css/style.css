@@ -11,7 +11,7 @@ ul,
 ol {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 .header {
@@ -82,7 +82,7 @@ ol {
 }
 
 .anav {
-  margin: -107;
+  margin: 20;
 }
 
 .header-bar-bg path {
