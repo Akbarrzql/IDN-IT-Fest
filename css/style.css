@@ -663,6 +663,9 @@ ol {
 }
 
 @media only screen and (max-width: 450px) {
+    .process-judul {
+        font-size: 2.5rem;
+    }
     .process-text-head {
         width: 100%;
     }
@@ -682,6 +685,53 @@ ol {
         font-size: 0.85rem;
         color: white;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .process-judul {
+        font-size: 2rem;
+    }
+    .process-sub {
+        font-size: 2.5rem;
+    }
+    .container-process {
+        align-items: center;
+        justify-content: center;
+    }
+    .process-judul {
+        font-size: 2rem;
+    }
+    .process-sub {
+        font-size: 2.5rem;
+    }
+    .process-text-head {
+        margin: 0;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .card,
+    .card2 {
+        width: 16.6rem;
+    }
+    .process-img {
+        width: 16.6rem;
+        height: 12.1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .process-judul {
+        font-size: 1.79rem;
+    }
+    .process-sub {
+        font-size: 2.5rem;
+    }
+    .process-text-head {
+        font-size: 1rem;
     }
 }
 
@@ -1339,6 +1389,13 @@ ol {
     }
 }
 
+@media only screen and (max-width: 375px) {
+    .button-meditasi {
+        width: 50%;
+        font-size: 0.75rem;
+    }
+}
+
 
 /*  */
 
@@ -1371,3 +1428,194 @@ ol {
         font-size: 1rem;
     }
 }
+
+footer {
+    bottom: 0;
+}
+
+@media (max-height: 800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #395b64;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px "Cookie", cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #ffffff;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-lokasi {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-lokasi .tittle-kontak {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-center i {
+    text-align: center;
+    line-height: 42px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.email {
+    font-size: 17px;
+    line-height: 38px;
+    /* margin-left: -3px; */
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.footer-distributed .footer-center p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a i img {
+    width: 2rem;
+    height: auto;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #8f9296;
+}
+
+.footer-links a:hover {
+    color: #8f9296;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+
+/* @media only screen and (max-width: 380px) {
+  .body{
+    margin: -15rem 0;
+  }
+} */
