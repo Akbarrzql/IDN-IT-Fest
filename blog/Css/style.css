@@ -60,7 +60,7 @@ nav {
 }
 
 .img-content {
-  width: 55%;
+  width: 45%;
   height: auto;
 }
 
@@ -73,15 +73,16 @@ nav {
 
 @media only screen and (max-width: 1024px) {
   .body {
-    margin: -40rem 2rem;
+    margin: -40rem 0;
   }
   .img-content {
-    width: 60%;
+    width: 55%;
     height: auto;
   }
 
   .text-content {
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -100,12 +101,12 @@ nav {
   }
 
   .img-content {
-    width: 65%;
+    width: 55%;
     height: auto;
   }
 
   .title-content {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .text-content {
@@ -126,7 +127,7 @@ nav {
     width: 100%;
   }
   .title-content {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0;
   }
 
@@ -147,6 +148,10 @@ nav {
     margin: -17em 0;
   }
 
+.title-content{
+  font-size: 1.1rem;
+}
+
   .up-content {
     height: 18rem;
     width: 100%;
@@ -159,7 +164,7 @@ nav {
 
   .img-content {
     height: auto;
-    width: 65%;
+    width: 55%;
   }
 }
 
@@ -174,22 +179,22 @@ nav {
   }
 
   .title-content {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   .img-content {
     height: auto;
-    width: 65%;
+    width: 55%;
   }
 
   .text-content {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 2rem 2rem;
   }
 }
 
 .MDS {
-  margin: 10rem 8rem;
+  margin: 10rem 5rem;
   /* padding: auto; */
   font-family: Jura;
 }
@@ -326,6 +331,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-auto-rows: 240px;
   }
+
   .judul-mds {
     font-size: 1rem;
   }
@@ -343,6 +349,14 @@ nav {
 }
 
 @media only screen and (max-width: 1495px) {
+  .MDS{
+    margin: 2.6rem 5rem;
+  }
+  
+.img-content{
+  
+}
+
   .container-mds {
     gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -354,17 +368,40 @@ nav {
 }
 
 @media only screen and (max-width: 1375px) {
+  .MDS{
+    margin: 2rem 5rem;
+  }
+
   .container-mds {
     gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-auto-rows: 180px;
   }
+
+  .judul-mds-head {
+    font-family: Jura;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #14142b;
+  }
 }
 
 @media only screen and (max-width: 1256px) {
+  .MDS{
+    margin: 1.5rem 5rem;
+  }
+
+
   .container-mds {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     grid-auto-rows: 160px;
+  }
+
+  .judul-mds-head {
+    font-family: Jura;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #14142b;
   }
 }
 
@@ -383,6 +420,7 @@ nav {
 }
 
 @media only screen and (max-width: 1002px) {
+
   .card-tall {
     grid-row: span 1 / auto;
   }
@@ -393,10 +431,65 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: 240px;
   }
+
+  .judul-mds-head {
+    font-family: Jura;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #14142b;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .MDS{
+    margin: 1.2rem 5rem;
+  }
+
+
+  .judul-mds-head {
+    font-family: Jura;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #14142b;
+  }
+
+  .MDS h3{
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .title-content{
+    font-size: 0.8rem;
+  }
+
+  .img-content{
+    width: 55%;
+    height: auto;
+  }
+
+  .container-mds {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-auto-rows: 160px;
+  }
+  .MDS{
+    margin: 1rem 5rem;
+  }
+
+  .judul-mds-head {
+    font-family: Jura;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #14142b;
+  }
+
+  .MDS h3{
+    font-size: 0.5rem;
+  }
 }
 
 footer {
-  position: fixed;
   bottom: 0;
 }
 
