@@ -1,0 +1,29 @@
+// slide otomatis //
+
+// var slideIndex = 0;
+// carousel();
+
+// function carousel() {
+//   var i;
+//   var x = document.getElementsByClassName("image-slide");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > x.length) {slideIndex = 1}
+//   x[slideIndex-1].style.display = "block";
+//   setTimeout(carousel, 2500);
+// }
+const tablet = window.matchMedia("(max-width: 970px)");
+const procesSpecial = document.getElementById("process-special");
+
+function tabletResize(tablet) {
+    if (tablet.matches) {
+        procesSpecial.style.marginBottom = "10rem";
+    } else {
+        procesSpecial.style.marginBottom = "0rem";
+    }
+}
+tablet.addListener(tabletResize);
+tabletResize(tablet);
+// end //

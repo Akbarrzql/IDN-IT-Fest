@@ -181,6 +181,26 @@ nav {
     width: 30rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-container {
+        margin: 0 2rem;
+    }
+    .header-judul {
+        font-size: 2.5rem;
+    }
+    .header-sub {
+        font-size: 3rem;
+        margin-left: 3rem;
+    }
+    .alltext-header {
+        margin: 0 2rem 0 0;
+    }
+    .image-slide {
+        height: 15rem;
+        width: 20rem;
+    }
+}
+
 
 /*  */
 
@@ -213,6 +233,46 @@ nav {
     font-family: Jura;
     font-size: 1.5rem;
     color: #2c3333;
+}
+
+@media only screen and (max-width: 768px) {
+    .why-judul {
+        font-family: Jura;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .why-sub-judul {
+        font-family: Caveat;
+        font-size: 4.5rem;
+        color: #7d9d9c;
+        margin-bottom: 2rem;
+    }
+    .why {
+        margin: 8rem 6rem;
+    }
+    .why-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .why-judul {
+        font-family: Jura;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .why-sub-judul {
+        font-family: Caveat;
+        font-size: 3.5rem;
+        color: #7d9d9c;
+        margin-bottom: 2rem;
+    }
+    .why {
+        margin: 8rem 2rem;
+    }
+    .why-text {
+        width: 100%;
+    }
 }
 
 
@@ -426,23 +486,104 @@ nav {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
+    .container-process {
+        align-items: center;
+        justify-content: center;
+    }
+    .process-judul {
+        font-size: 3rem;
+    }
+    .process-sub {
+        font-size: 3rem;
+    }
+    .process-text-head {
+        margin: 0;
+        font-size: 1rem;
+        width: 73%;
+    }
+    .container-card2 {
+        display: block;
+        margin: 0 0 0 0;
+    }
     .card,
     .card2 {
-        width: 24.6rem;
+        width: 32.6rem;
     }
     .process-img {
-        width: 22.6rem;
-        height: 11.1rem;
+        width: 32.6rem;
+        height: 22.1rem;
     }
     .process-subtema {
-        font-size: 1.75rem;
-        margin: 1rem 0 1rem 0;
+        font-size: 2rem;
+        margin: 0 0 0.5rem 0;
     }
     .process-text {
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: white;
-        width: 90%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-process {
+        align-items: center;
+        justify-content: center;
+    }
+    .process-judul {
+        font-size: 3rem;
+    }
+    .process-sub {
+        font-size: 3.5rem;
+    }
+    .process-text-head {
+        margin: 0;
+        font-size: 1rem;
+        width: 89%;
+    }
+    .container-card2 {
+        display: block;
+        margin: 0 0 0 0;
+    }
+    .card,
+    .card2 {
+        width: 26.6rem;
+    }
+    .process-img {
+        width: 26.6rem;
+        height: 18.1rem;
+    }
+    .process-subtema {
+        font-size: 2rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .process-text {
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .process-text-head {
+        width: 100%;
+    }
+    .card,
+    .card2 {
+        width: 18.6rem;
+    }
+    .process-img {
+        width: 18.6rem;
+        height: 14.1rem;
+    }
+    .process-subtema {
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .process-text {
+        font-size: 0.85rem;
+        color: white;
+        width: 100%;
     }
 }
 
@@ -541,7 +682,7 @@ nav {
 .jenis-deskripsi {
     font-size: 0.8rem;
     font-weight: 500;
-    padding: 1rem 2rem;
+    padding: 1rem;
     letter-spacing: 0.02rem;
 }
 
@@ -586,6 +727,91 @@ nav {
     }
 }
 
+@media only screen and (max-width: 970px) {
+    .container-jenis {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-auto-rows: 240px;
+        height: 30rem;
+        gap: 2.5rem;
+        margin: 2rem 0;
+    }
+    .card-jenis {
+        max-width: 14rem;
+        height: 14rem;
+        margin: 0.5rem;
+        padding: 0 1rem;
+    }
+    .jenis-deskripsi {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0 1rem 1rem 1rem;
+        letter-spacing: 0.02rem;
+    }
+    .jenis {
+        padding: 5rem 0 0 0;
+        font-family: Jura;
+    }
+    .container-image-jenis {
+        position: relative;
+        width: 14.5rem;
+        margin-top: 2rem;
+        height: 15rem;
+        top: -5%;
+        left: -1rem;
+        border-radius: 1rem;
+        padding: 0 1.25rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-jenis {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-auto-rows: 240px;
+        height: 30rem;
+        gap: 2.5rem;
+        margin: 2rem 0;
+    }
+    .card-jenis {
+        max-width: 14rem;
+        height: 14rem;
+        margin: 0.5rem;
+        padding: 0 1rem;
+    }
+    .jenis-deskripsi {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0 1rem 1rem 1rem;
+        letter-spacing: 0.02rem;
+    }
+    .jenis {
+        padding: 5rem 0 0 0;
+        font-family: Jura;
+    }
+    .container-image-jenis {
+        position: relative;
+        width: 14.5rem;
+        margin-top: 2rem;
+        height: 15rem;
+        top: -5%;
+        left: -1rem;
+        border-radius: 1rem;
+        padding: 0 1.25rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-jenis {
+        display: flex;
+        flex-direction: column;
+        height: 70rem;
+        margin-bottom: 0;
+    }
+}
+
 
 /* End of Point penting */
 
@@ -609,7 +835,7 @@ nav {
 .judul-mds-head {
     font-family: Jura;
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #14142b;
 }
 
@@ -805,6 +1031,41 @@ nav {
     }
 }
 
+@media only screen and (max-width: 970px) {
+    .MDS {
+        margin: 4rem 8rem 10rem 8rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .MDS {
+        margin: 6rem;
+        /* padding: auto; */
+        font-family: Jura;
+    }
+    .judul-mds-head {
+        font-size: 3rem;
+    }
+    .header-mds {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .MDS {
+        margin: 2rem;
+        /* padding: auto; */
+        font-family: Jura;
+    }
+    .judul-mds-head {
+        font-size: 1.5rem;
+    }
+    .container-mds {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-auto-rows: 240px;
+    }
+}
+
 
 /* End of Tips dan Trick  */
 
@@ -934,7 +1195,7 @@ nav {
         width: 50%;
         padding: 1rem;
         margin-top: 2rem;
-        border-radius: 2;
+        border-radius: 2rem;
         border: 1px solid #ffffff;
         background-color: transparent;
         border-radius: 1rem;
@@ -942,6 +1203,40 @@ nav {
         font-size: 1rem;
         font-weight: 600;
         font-family: Jura;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-meditasi {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 35rem;
+    }
+    .image-meditasi {
+        width: 100%;
+        height: 22rem;
+    }
+    .text-meditasi {
+        padding: 2rem 0;
+    }
+    .button-meditasi {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .button-meditasi {
+        width: 40%;
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .button-meditasi {
+        width: 45%;
+        font-size: 0.75rem;
     }
 }
 
@@ -964,4 +1259,16 @@ nav {
     font-family: Jura;
     font-weight: 600;
     font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .quotes-penyemangat {
+        margin: 10rem 5rem;
+    }
+    .text-penyemangat {
+        font-size: 2rem;
+    }
+    .dari-penyemangat {
+        font-size: 1rem;
+    }
 }
