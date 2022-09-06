@@ -54,7 +54,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 415px;
+  width: 485px;
   max-width: 100%;
   height: 58px;
   position: relative;
@@ -65,11 +65,11 @@ ol {
 }
 
 .header-menu li {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .header-menu li:first-child {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .header-bar-bg {
@@ -79,6 +79,10 @@ ol {
   top: 0;
   left: 0;
   pointer-events: none;
+}
+
+.anav {
+  margin: -107;
 }
 
 .header-bar-bg path {
@@ -91,7 +95,7 @@ ol {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10;
   pointer-events: none;
 }
 
