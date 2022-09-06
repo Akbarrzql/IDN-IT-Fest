@@ -458,50 +458,65 @@ nav {
 /* Point Penting */
 
 .jenis {
-    margin: 5rem 0 20rem 0;
+    padding: 5rem 0;
+    font-family: Jura;
 }
 
-.jenis-introvert {
+.jenis-h4 {
+    text-align: center;
+    font-family: Jura;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-bottom: 3.4rem;
+}
+
+.judul-jenis {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.container-jenis {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding: 2rem;
     column-gap: 1.5rem;
     height: 20rem;
-    margin-top: 1rem;
-    font-family: Jura;
 }
 
-.jenis-judul-head {
+.text-center {
     text-align: center;
-    font-family: Jura;
-    font-weight: bold;
-    font-size: 4rem;
-    padding-bottom: 3.4rem;
 }
 
-.jenis-card {
-    width: 17.5625rem;
-    height: 17.5625rem;
+.card-jenis {
+    position: relative;
+    max-width: 15rem;
+    height: 14rem;
     background-color: #395b64;
+    margin: 30px -4px;
+    padding: 20px 15px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.1);
-    transition: 0.6s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 1rem 0.2rem;
     border: none;
-    border-radius: 0.9rem 0 0.9rem 0;
 }
 
-.jenis-card:hover {
-    height: 27rem;
+.card-jenis:hover {
+    height: 20rem;
 }
 
-.jenis-container-image {
+.container-image-jenis {
     position: relative;
-    width: 12.5rem;
-    top: 3rem;
-    left: 1rem;
-    z-index: 1;
+    width: 14.5rem;
+    margin-top: 2rem;
+    height: 15rem;
+    top: -5%;
+    left: -1rem;
     border-radius: 1rem;
     padding: 0 1.25rem;
     text-align: center;
@@ -509,22 +524,14 @@ nav {
 
 .jenis-image {
     max-width: 100%;
+    /* margin-left: 3.3rem; */
 }
 
-.jenis-judul {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 800;
-    text-align: center;
-    cursor: default;
-    padding-top: 0.625rem;
-}
-
-.jenis-content {
+.jenis-container-deskripsi {
     position: relative;
     top: -5rem;
     left: 0.1rem;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     visibility: visible;
     opacity: 0;
@@ -534,20 +541,53 @@ nav {
 .jenis-deskripsi {
     font-size: 0.8rem;
     font-weight: 500;
-    padding: 4rem 2rem;
-    /* letter-spacing: 0.02rem; */
-    cursor: default;
+    padding: 1rem 2rem;
+    letter-spacing: 0.02rem;
 }
 
-.jenis-card:hover .jenis-content {
-    margin-top: 5.5rem;
+.card-jenis:hover .jenis-container-deskripsi {
+    margin-top: 6rem;
     visibility: visible;
     opacity: 1;
     transition-delay: 0.1s;
 }
 
+@media only screen and (max-width: 1440px) {
+    .card-jenis {
+        max-width: 13rem;
+        height: 13rem;
+    }
+    .container-jenis {
+        position: relative;
+        padding: 2rem;
+        height: 25rem;
+    }
+    .container-image-jenis {
+        left: -1.9rem;
+    }
+}
 
-/*  */
+@media only screen and (max-width: 1024px) {
+    .card-jenis {
+        max-width: 12rem;
+        height: 12rem;
+    }
+    .container-image-jenis {
+        left: -2.5rem;
+    }
+    .jenis-h4 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        padding-bottom: 1.4rem;
+    }
+    .container-jenis {
+        padding: 0 2rem 2rem 2rem;
+        column-gap: 1rem;
+    }
+}
+
+
+/* End of Point penting */
 
 
 /* Tips dan Trick */
@@ -726,6 +766,12 @@ nav {
 }
 
 @media only screen and (max-width: 1256px) {
+    .judul-mds-head {
+        font-size: 2.5rem;
+    }
+    .deskripsi-mds-head {
+        font-size: 0.9rem;
+    }
     .container-mds {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         grid-auto-rows: 160px;
@@ -857,6 +903,45 @@ nav {
     }
     .button-meditasi {
         width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .card-meditasi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 87%;
+        background-color: #395b64;
+        height: 22rem;
+    }
+    .title-meditasi {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+    .text-meditasi {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem 0 0;
+        margin: 0 2rem;
+    }
+    .image-meditasi {
+        height: 22rem;
+        width: 22rem;
+    }
+    .button-meditasi {
+        width: 50%;
+        padding: 1rem;
+        margin-top: 2rem;
+        border-radius: 2;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        border-radius: 1rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Jura;
     }
 }
 
