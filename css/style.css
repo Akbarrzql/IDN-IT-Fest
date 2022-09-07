@@ -146,7 +146,6 @@ ol {
     left: 0;
     width: 100%;
     z-index: 100;
-    background: transparent linear-gradient( 180deg, rgba(242, 238, 233, 1) 0%, rgba(242, 238, 233, 0) 100%) 0% 0% no-repeat padding-box;
 }
 
 .header-bar {
@@ -1009,9 +1008,6 @@ ol {
     overflow: hidden;
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%) !important;
 }
 
@@ -1034,6 +1030,7 @@ ol {
     font-size: 1.2rem;
     color: #ffffff;
     font-weight: 600;
+    z-index: 1;
 }
 
 .animated-grid {
@@ -1053,10 +1050,18 @@ ol {
 
 .card-mds:nth-child(6) {
     animation-delay: calc(1 * var(--stagger-delay));
+    background-image: url("/blog/img/imgfphp.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card-mds:nth-child(3) {
     animation-delay: calc(3 * var(--stagger-delay));
+    background-image: url("/blog/img/imgfphp.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card-mds:nth-child(8) {
