@@ -1,3 +1,14 @@
+//NavbarScroll
+const jumpTo = (id) => {
+    document.getElementsByClassName(id)[0].scrollIntoView({
+        behavior: "smooth",
+    });
+};
+
+var slideIndex = 0;
+
+//end NavbarScroll
+
 document.getElementById("beranda").onclick = function() {
     location.href = "/index.html";
 };
