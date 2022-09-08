@@ -26,9 +26,6 @@ function carousel() {
 }
 
 //event listener
-document.getElementById("beranda").onclick = function() {
-    location.href = "/index.html";
-};
 
 document.getElementById("mds1").onclick = function() {
     location.href = "/blog/Page/berusaha.html";
