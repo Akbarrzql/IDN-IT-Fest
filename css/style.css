@@ -1113,18 +1113,10 @@ ol {
 
 .card-mds:nth-child(6) {
     animation-delay: calc(1 * var(--stagger-delay));
-    background-image: url("/blog/img/imgfphp.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .card-mds:nth-child(3) {
     animation-delay: calc(3 * var(--stagger-delay));
-    background-image: url("/blog/img/imgfphp.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .card-mds:nth-child(8) {
