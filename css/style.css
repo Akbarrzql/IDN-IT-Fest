@@ -1051,8 +1051,6 @@ ol {
     margin-top: 1rem;
 }
 
-.card-mds {}
-
 .card-mds:hover {
     transform: translateY(-3px) scale(1.05);
 }
@@ -1100,10 +1098,6 @@ ol {
 
 .animated-grid {
     --stagger-delay: 50ms;
-}
-
-.active.cardEntrance {
-    animation: fade-right 1s ease-in;
 }
 
 @keyframes cardEntrance {
