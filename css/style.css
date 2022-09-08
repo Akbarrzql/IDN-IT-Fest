@@ -169,7 +169,7 @@ ol {
   justify-content: center;
   width: 550px;
   max-width: 100%;
-  height: 50px;
+  height: 60px;
   position: relative;
   z-index: 10;
   font-family: Jura;
@@ -1345,6 +1345,23 @@ ol {
     font-size: 1rem;
     font-weight: 600;
     font-family: Jura;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .card-meditasi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    background-color: #395b64;
+    height: 22rem;
+  }
+
+  .button-meditasi {
+    width: 70%;
+    margin-top: 1rem;
+    padding: 0.9rem;
   }
 }
 
