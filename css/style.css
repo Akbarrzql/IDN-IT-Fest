@@ -306,7 +306,7 @@ ol {
 /* Judul */
 
 .header-container {
-    margin: 0 8rem;
+    margin: 13rem 8rem;
 }
 
 .header-judul {
@@ -321,6 +321,7 @@ ol {
     margin-left: 6.5rem;
     color: #7d9d9c;
     letter-spacing: 0.2rem;
+    margin-top: -1.5rem;
 }
 
 .alltext-header {
@@ -336,15 +337,57 @@ ol {
     width: 30rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header-container {
+    margin: 10rem 2rem;
+  }
+
+  .header-judul {
+    font-family: Jura;
+    font-size: 3rem;
+    color: #2c3333;
+}
+
+.header-sub {
+    font-family: Caveat;
+    font-size: 4.2rem;
+    margin-top: -1rem;
+    margin-left: 6.5rem;
+    color: #7d9d9c;
+    letter-spacing: 0.2rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    margin: 8rem 2rem;
+  }
+
+  .header-judul {
+    font-family: Jura;
+    font-size: 2.5rem;
+    color: #2c3333;
+}
+
+.header-sub {
+    font-family: Caveat;
+    font-size: 3.5rem;
+    margin-top: -1rem;
+    margin-left: 6.5rem;
+    color: #7d9d9c;
+    letter-spacing: 0.2rem;
+}
+}
+
 @media only screen and (max-width: 600px) {
     .header-container {
-        margin: 0 2rem;
+        margin: 2.5rem 2rem;
     }
     .header-judul {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .header-sub {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-left: 3rem;
     }
     .alltext-header {
@@ -356,6 +399,20 @@ ol {
     }
 }
 
+@media only screen and (max-width: 400px) {
+  .header-container {
+    margin: 2rem 2rem;
+  } 
+  
+  .header-judul {
+      font-size: 1.5rem;
+  }
+  .header-sub {
+      font-size: 2rem;
+      margin-left: 3rem;
+  }
+}
+
 
 /*  */
 
@@ -364,30 +421,30 @@ ol {
 
 .why {
     text-align: center;
-    margin: 8rem 8rem 18rem 8rem;
-    padding: auto;
+    margin: 5rem 8rem 18rem 5rem;
+    padding-top: 7rem;
 }
 
 .why-judul {
-    font-family: Jura;
-    font-size: 4rem;
-    color: #2c3333;
-    margin-bottom: 2rem;
+  font-family: Jura;
+  font-size: 3.5rem;
+  color: #2c3333;
+  margin-bottom: 0.5rem;
 }
 
 .why-sub-judul {
-    font-family: Caveat;
-    font-size: 6rem;
-    margin-top: -2.8rem;
-    color: #7d9d9c;
+  font-family: Caveat;
+  font-size: 5.5rem;
+  margin-top: -2.8rem;
+  color: #7d9d9c;
 }
 
 .why-text {
-    width: 80%;
-    margin: auto;
-    font-family: Jura;
-    font-size: 1.5rem;
-    color: #2c3333;
+  width: 90%;
+  margin: auto;
+  font-family: Jura;
+  font-size: 1.2rem;
+  color: #2c3333;
 }
 
 @media only screen and (max-width: 768px) {
@@ -403,7 +460,7 @@ ol {
         margin-bottom: 2rem;
     }
     .why {
-        margin: 8rem 6rem;
+        margin: 5rem 6rem;
     }
     .why-text {
         width: 100%;
@@ -423,14 +480,31 @@ ol {
         margin-bottom: 2rem;
     }
     .why {
-        margin: 8rem 2rem;
+        margin: 5rem 2rem;
     }
     .why-text {
         width: 100%;
     }
 }
 
+@media only screen and (max-width: 400px){
+  .why-judul {
+    font-family: Jura;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.why-sub-judul {
+    font-family: Caveat;
+    font-size: 3rem;
+    color: #7d9d9c;
+    margin-bottom: 2rem;
+}
 
+  .why {
+    margin: 0rem 2rem;
+    padding-top: 3.5rem;
+}
+}
 /*  */
 
 
@@ -804,99 +878,99 @@ ol {
 /* Point Penting */
 
 .jenis {
-    padding: 5rem 0;
-    font-family: Jura;
+  padding: 3rem 0;
+  font-family: Jura;
 }
 
 .jenis-h4 {
-    text-align: center;
-    font-family: Jura;
-    font-weight: bold;
-    font-size: 3.5rem;
-    padding-bottom: 3.4rem;
+  text-align: center;
+  font-family: Jura;
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 
 .judul-jenis {
-    color: #ffffff;
-    font-size: 1.25rem;
-    font-weight: 700;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .container-jenis {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 2rem;
-    column-gap: 1.5rem;
-    height: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  column-gap: 1.5rem;
+  height: 20rem;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .card-jenis {
-    position: relative;
-    max-width: 15rem;
-    height: 14rem;
-    background-color: #395b64;
-    margin: 30px -4px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.1);
-    transition: 0.4s ease-in-out;
-    border-radius: 1rem 0.2rem;
-    border: none;
+  position: relative;
+  max-width: 15rem;
+  height: 14rem;
+  background-color: #395b64;
+  margin: 30px -4px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+  border-radius: 1rem 0.2rem;
+  border: none;
 }
 
 .card-jenis:hover {
-    height: 20rem;
+  height: 20rem;
 }
 
 .container-image-jenis {
-    position: relative;
-    width: 14.5rem;
-    margin-top: 2rem;
-    height: 15rem;
-    top: -5%;
-    left: -1rem;
-    border-radius: 1rem;
-    padding: 0 1.25rem;
-    text-align: center;
+  position: relative;
+  width: 14.5rem;
+  margin-top: 2rem;
+  height: 15rem;
+  top: -5%;
+  left: -1rem;
+  border-radius: 1rem;
+  padding: 0 1.25rem;
+  text-align: center;
 }
 
 .jenis-image {
-    max-width: 100%;
-    /* margin-left: 3.3rem; */
+  max-width: 100%;
+  /* margin-left: 3.3rem; */
 }
 
 .jenis-container-deskripsi {
-    position: relative;
-    top: -5rem;
-    left: 0.1rem;
-    color: #fff;
-    text-align: center;
-    visibility: visible;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
+  position: relative;
+  top: -5rem;
+  left: 0.1rem;
+  color: #fff;
+  text-align: center;
+  visibility: visible;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
 }
 
 .jenis-deskripsi {
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 1rem;
-    letter-spacing: 0.02rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 1rem;
+  letter-spacing: 0.02rem;
 }
 
 .card-jenis:hover .jenis-container-deskripsi {
-    margin-top: 6rem;
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0.1s;
+  margin-top: 6rem;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.1s;
 }
+
 
 @media only screen and (max-width: 1440px) {
     .card-jenis {
@@ -1051,6 +1125,8 @@ ol {
     margin-top: 1rem;
 }
 
+.card-mds {}
+
 .card-mds:hover {
     transform: translateY(-3px) scale(1.05);
 }
@@ -1098,6 +1174,10 @@ ol {
 
 .animated-grid {
     --stagger-delay: 50ms;
+}
+
+.active.cardEntrance {
+    animation: fade-right 1s ease-in;
 }
 
 @keyframes cardEntrance {
@@ -1281,60 +1361,62 @@ ol {
 
 /* meditasi */
 
+/* meditasi */
+
 .container-meditasi {
-    align-items: center;
-    font-family: Jura;
+  align-items: center;
+  font-family: Jura;
 }
 
 .card-meditasi {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 93%;
-    background-color: #395b64;
-    height: 33rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 93%;
+  background-color: #395b64;
+  height: 33rem;
 }
 
 .text-meditasi {
-    display: flex;
-    flex-direction: column;
-    padding: 8rem 0 0 0;
-    margin: 0 8rem;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0 0 0;
+  margin: 0 8rem;
 }
 
 .title-meditasi {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
 .desc-meditasi {
-    font-size: 1.5rem;
-    color: white;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .button-meditasi {
-    width: 30%;
-    padding: 1rem 2rem;
-    margin-top: 3rem;
-    border-radius: 2;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    border-radius: 1rem;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: Jura;
+  width: 30%;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-radius: 2;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Jura;
 }
 
 .button-meditasi:hover {
-    background-color: #ffffff;
-    color: #395b64;
+  background-color: #ffffff;
+  color: #395b64;
 }
 
 .image-meditasi {
-    height: 33rem;
-    width: 40rem;
+  height: 33rem;
+  width: 40rem;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -1374,6 +1456,39 @@ ol {
     .button-meditasi {
         width: 35%;
     }
+}
+
+@media only screen and (max-width: 1160px) {
+  .card-meditasi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 87%;
+    background-color: #395b64;
+    height: 25rem;
+  }
+
+  .image-meditasi {
+    height: 25rem;
+    width: 28rem;
+  }
+
+  .text-meditasi {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0 0;
+    margin: 0 2.5rem;
+  }
+
+  .title-meditasi {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .button-meditasi {
+    width: 55%;
+}
 }
 
 @media only screen and (max-width: 1024px) {
