@@ -1179,7 +1179,7 @@ ol {
 .card-mds {}
 
 .card-mds:hover {
-    transform: translateY(-3px) scale(1.05);
+    transform: translateY(-3px) scale(1.02);
 }
 
 .card-tall {
@@ -1211,6 +1211,10 @@ ol {
     overflow: hidden;
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
+}
+
+#mds1:hover, #mds2:hover, #mds3:hover, #mds4:hover, #mds5:hover, #mds6:hover, #mds7:hover, #mds8:hover, #mds9:hover, #mds10:hover, #mds11:hover, #mds12:hover{
+    background: #587d87;
 }
 
 .judul-mds {
