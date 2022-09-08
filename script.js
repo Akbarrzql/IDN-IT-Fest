@@ -7,22 +7,24 @@ const jumpTo = (id) => {
     });
 };
 
-var slideIndex = 0;
+let slideIndex = 0;
+showSlides();
 
-//end NavbarScroll
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("image-slide");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {
-        slideIndex = 1;
-    }
-    x[slideIndex - 1].style.display = "block";
-    setTimeout(carousel, 2500);
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("Slides-card");
+  let dots = document.getElementsByClassName("dot-slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-card", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active-card";
+  setTimeout(showSlides, 1700); // Change image every 2 seconds
 }
 
 //event listener
