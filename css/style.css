@@ -340,7 +340,7 @@ ol {
 }
 
 /* Caption text */
-.text-slide {
+/* .text-slide {
   font-weight: 700;
   color: #161616;
   font-size: 1.2rem;
@@ -351,16 +351,16 @@ ol {
   width: 100%;
   text-align: center;
   padding: 0;
-}
+} */
 
 /* Number text (1/3 etc) */
-.number-slide {
+/* .number-slide {
   color: #ffffff;
   font-size: 1.5rem;
   position: absolute;
   top: 7.5rem;
   left: 8.2rem;
-}
+} */
 
 /* The dots/bullets/indicators */
 .dot-slide {
@@ -374,7 +374,7 @@ ol {
 }
 
 .active-card {
-  background-color: #884c4c;
+  background-color: #395b64;
 }
 
 /* Fading animation */
