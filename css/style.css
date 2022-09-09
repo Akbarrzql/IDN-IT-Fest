@@ -1519,6 +1519,7 @@ ol {
 .button-meditasi:hover {
     background-color: #ffffff;
     color: #395b64;
+    transition: 0.3s;
 }
 
 .image-meditasi {
