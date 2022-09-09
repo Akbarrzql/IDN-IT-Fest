@@ -307,7 +307,7 @@ ol {
 
 .header-container {
     margin: 5rem 8rem;
-    background-color: #ddd2c0;
+    background-color: #e4dccf;
     position: relative;
 }
 
@@ -334,7 +334,7 @@ ol {
 
 .img-slide {
     vertical-align: middle;
-    height: 21rem;
+    height: 23rem;
     width: 48rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
