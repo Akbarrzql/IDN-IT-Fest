@@ -20,6 +20,51 @@ const startSatu = async() => {
     imgSendiri1();
 };
 
+const contentMotivator1 = async() => {
+    let motivator1 = document.getElementById("contentMotivator1");
+    let containerMotivator = document.getElementById("motivaator");
+    containerMotivator.classList.remove("d-none");
+    motivator1.classList.remove("hidden");
+    motivator1.classList.add("visible");
+    await timeout(1000);
+    contentMotivator2();
+};
+const contentMotivator2 = async() => {
+    let motivator2 = document.getElementById("contentMotivator2");
+    motivator2.classList.remove("hidden");
+    motivator2.classList.add("visible");
+    await timeout(1000);
+    contentMotivator3();
+};
+const contentMotivator3 = async() => {
+    let motivator3 = document.getElementById("contentMotivator3");
+    motivator3.classList.remove("hidden");
+    motivator3.classList.add("visible");
+    await timeout(1000);
+    contentMotivator4();
+};
+const contentMotivator4 = async() => {
+    let motivator4 = document.getElementById("contentMotivator4");
+    motivator4.classList.remove("hidden");
+    motivator4.classList.add("visible");
+    await timeout(1000);
+    contentMotivator5();
+};
+const contentMotivator5 = async() => {
+    let motivator5 = document.getElementById("contentMotivator5");
+    motivator5.classList.remove("hidden");
+    motivator5.classList.add("visible");
+    await timeout(1000);
+    contentHasFinished();
+};
+
+const removeContentMotivator = async() => {
+    let containerMotivator = document.getElementById("motivaator");
+    containerMotivator.classList.remove("visible");
+    containerMotivator.classList.add("hidden");
+    containerMotivator.classList.add("d-none");
+};
+
 const imgSendiri1 = async() => {
     let imgSatu = document.getElementById("img-sendiri-1");
     startTextAnimation();
@@ -178,10 +223,12 @@ const startTextAnimation = async() => {
     );
     await duaText("<i>And, don't forget to be kind to yourself.</i>", 4500);
     removeSixPerson();
-    contentHasFinished();
+    await timeout(2000);
+    contentMotivator1();
 };
 
 const contentHasFinished = () => {
+    removeContentMotivator();
     let startContent = document.getElementById("start-container");
     let startDescText = document.getElementById("start-desc-text");
     startContent.classList.remove("hidden");
