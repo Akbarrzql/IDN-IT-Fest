@@ -111,23 +111,26 @@ const startTextAnimation = async() => {
     await mainText("Ini adalah budi", 100);
     await mainText(
         "Awalnya, budi adalah orang yang pendiam, dan tidak mau bersosialisasi.",
-        100
+        3000
     );
     await mainText(
         "Selama masa pandemi, Budi banyak menghabiskan waktu di rumah.",
-        100
+        3000
     );
-    await mainText("Sehingga, Budi menjadi orang individualisme. ", 100);
-    await mainText("Mengakibatkan, Budi tidak mempunyai seorang teman pun.", 100);
-    await mainText("Seringkali Budi merasa kesepian.", 100);
-    await mainText("Budi juga ingin berubah, seperti anda.", 100);
-    await mainText("Dia pelan pelan membangkitkan rasa percaya dirinya.", 100);
+    await mainText("Sehingga, Budi menjadi orang individualisme. ", 3000);
+    await mainText(
+        "Mengakibatkan, Budi tidak mempunyai seorang teman pun.",
+        3000
+    );
+    await mainText("Seringkali Budi merasa kesepian.", 3000);
+    await mainText("Budi juga ingin berubah, seperti anda.", 3000);
+    await mainText("Dia pelan pelan membangkitkan rasa percaya dirinya.", 3000);
     await mainText(
         "Membuka diri, mulai menjalin pertemanan dengan orang lain.",
-        100
+        3000
     );
 
-    await mainText("Akhirnya, Budi membuka diri untuk mencari teman.", 100);
+    await mainText("Akhirnya, Budi membuka diri untuk mencari teman.", 3000);
     await mainText("Tentunya di lingkungan yang positif.", 4000);
 
     // await mainText(
@@ -151,6 +154,8 @@ const startTextAnimation = async() => {
     await imgSendiri5();
     await timeout(4000);
     removeMainStory();
+
+    sixPerson();
 };
 
 const musicPlay1 = () => {
