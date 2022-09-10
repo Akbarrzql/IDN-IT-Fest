@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Jura:wght@300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Jura;
+}
+
+.d-none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.container-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.visible-motivator {
+    visibility: visible;
+    opacity: 1;
+    transition: all 12s linear;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    position: relative;
+    left: 50%;
+}
+
+.six-orang {
+    width: 25rem;
+    height: 20rem;
+}
+
+.main-content-image {
+    width: 15rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+.story-board-image {
+    width: 25rem;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.story-board-kata {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.content-ashe {
+    position: relative;
+    top: 39rem;
+    left: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 5rem;
+}
+
+.content-blake {
+    position: relative;
+    top: 10rem;
+    left: 25rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 5rem;
+}
+
+.content-robin {
+    position: relative;
+    top: -10rem;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 5rem;
+}
+
+.content-eleanor {
+    position: relative;
+    top: -2.8rem;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 5rem;
+}
+
+.content-ralph {
+    position: relative;
+    top: 10rem;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    height: 5rem;
+}
+
+.align-center {
+    text-align: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.d-flex,
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-3 {
+    position: relative;
+    top: -25rem;
+    left: 28rem;
+}
+
+.image-4 {
+    position: relative;
+    top: -25rem;
+    left: 7rem;
+}
+
+.image-5 {
+    position: relative;
+    top: -27rem;
+    left: -5rem;
+}
+
+.image-6 {
+    position: relative;
+    top: -25rem;
+    left: -29rem;
+}
