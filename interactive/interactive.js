@@ -76,6 +76,12 @@ const sixPerson = async() => {
     sixPerson.classList.add("visible");
 };
 
+const removeSixPerson = async() => {
+    let sixPerson = document.getElementById("six-person");
+    sixPerson.classList.remove("visible");
+    sixPerson.classList.add("hidden");
+};
+
 const mainText = async(text, ms) => {
     let mainContent = document.getElementById("story-main-text");
 
@@ -190,7 +196,9 @@ const startTextAnimation = async() => {
         "<i>So, take your time, enjoy the progress and cherish all the moments you <center>experience</center>.</i>",
         4500
     );
+
     await duaText("<i>And, don't forget to be kind to yourself.</i>", 4500);
+    removeSixPerson();
     contentHasFinished();
 };
 
