@@ -188,6 +188,12 @@ a {
     color: #212121;
     text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #395b64;
+    text-decoration: none;
 }
 
 ul,
@@ -1227,8 +1233,6 @@ ol {
     margin-top: 1rem;
 }
 
-.card-mds {}
-
 .card-mds:hover {
     transform: translateY(-3px) scale(1.02);
 }
@@ -1884,10 +1888,6 @@ footer {
     display: inline-block;
     cursor: pointer;
     text-align: center;
-}
-
-.footer-distributed .footer-icons a:hover {
-    background-color: #8f9296;
 }
 
 .footer-links a:hover {
