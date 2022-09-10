@@ -22,6 +22,13 @@
     flex-direction: row;
 }
 
+.container-img-2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .visible {
     visibility: visible;
     opacity: 1;
@@ -137,26 +144,33 @@
     flex-direction: column;
 }
 
+.image-2 {
+    position: relative;
+    top: -15rem;
+    left: -8rem;
+    z-index: 2;
+}
+
 .image-3 {
     position: relative;
-    top: -25rem;
+    top: -28rem;
     left: 28rem;
 }
 
 .image-4 {
     position: relative;
-    top: -25rem;
+    top: -28rem;
     left: 7rem;
 }
 
 .image-5 {
     position: relative;
-    top: -27rem;
+    top: -30rem;
     left: -5rem;
 }
 
 .image-6 {
     position: relative;
-    top: -25rem;
-    left: -29rem;
+    top: -30rem;
+    left: -26rem;
 }

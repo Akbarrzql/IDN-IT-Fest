@@ -5,8 +5,9 @@ const start = async() => {
     startContent.classList.remove("visible");
     startContent.classList.add("hidden");
     document.removeEventListener("click", start);
-    startSatu();
     musicPlay1();
+    await timeout(1000);
+    startSatu();
 };
 
 const startSatu = async() => {
@@ -74,7 +75,7 @@ const sixPerson = async() => {
     sixPerson.classList.add("visible");
 };
 
-const mainText = async(text, ms = 6000) => {
+const mainText = async(text, ms) => {
     let mainContent = document.getElementById("story-main-text");
 
     // write text
@@ -91,7 +92,7 @@ const duaText = async(text, ms) => {
     let duaContent = document.getElementById("story-dua-text");
 
     // write text
-    await timeout(100);
+    await timeout(1000);
     duaContent.innerHTML = text;
     duaContent.classList.add("visible");
     // hide text
@@ -108,29 +109,29 @@ const removeMainStory = async() => {
     mainStory.classList.add("d-none");
 };
 const startTextAnimation = async() => {
-    await mainText("Ini adalah budi", 100);
+    await mainText("Ini adalah Budi.", 4000);
     await mainText(
-        "Awalnya, budi adalah orang yang pendiam, dan tidak mau bersosialisasi.",
-        3000
+        "Awalnya, Budi adalah orang yang pendiam, dan tidak mau bersosialisasi.",
+        4000
     );
     await mainText(
         "Selama masa pandemi, Budi banyak menghabiskan waktu di rumah.",
-        3000
+        4000
     );
-    await mainText("Sehingga, Budi menjadi orang individualisme. ", 3000);
+    await mainText("Sehingga, Budi menjadi orang yang penyendiri. ", 4000);
     await mainText(
         "Mengakibatkan, Budi tidak mempunyai seorang teman pun.",
-        3000
+        4000
     );
-    await mainText("Seringkali Budi merasa kesepian.", 3000);
-    await mainText("Budi juga ingin berubah, seperti anda.", 3000);
-    await mainText("Dia pelan pelan membangkitkan rasa percaya dirinya.", 3000);
+    await mainText("Seringkali Budi merasa kesepian.", 4000);
+    await mainText("Budi juga ingin berubah, seperti anda.", 4000);
+    await mainText("Dia pelan pelan membangkitkan rasa percaya dirinya.", 4000);
     await mainText(
         "Membuka diri, mulai menjalin pertemanan dengan orang lain.",
-        3000
+        4000
     );
 
-    await mainText("Akhirnya, Budi membuka diri untuk mencari teman.", 3000);
+    await mainText("Akhirnya, Budi membuka diri untuk mencari teman.", 4000);
     await mainText("Tentunya di lingkungan yang positif.", 4000);
 
     // await mainText(
@@ -139,7 +140,7 @@ const startTextAnimation = async() => {
     // );
 
     imgSendiri2();
-    await duaText("Perlahan, budi menemukan teman baru.", 4000);
+    await mainText("Perlahan, Budi menemukan teman baru.", 3000);
     await timeout(1000);
     await imgSendiri6();
     await timeout(500);
@@ -147,15 +148,36 @@ const startTextAnimation = async() => {
     await timeout(500);
     imgSendiri3();
     await timeout(500);
-    await duaText(
-        "Dari waktu ke waktu, akhirnya teman budi menjadi banyak",
-        4000
+    await mainText(
+        "Dari waktu ke waktu, akhirnya teman Budi menjadi banyak",
+        3000
     );
     await imgSendiri5();
-    await timeout(4000);
+    await timeout(3000);
     removeMainStory();
+    await timeout(2000);
+
+    await duaText("Sekarang, Budi sudah berubah", 3000);
+    await duaText("Budi lebih bahagia.", 3000);
 
     sixPerson();
+    await duaText("Ini adalah hasil dari tekad untuk berubah Budi.", 3000);
+    await duaText("Budi dikelilingi oleh teman teman yang bermanfaat.", 3000);
+    await duaText(
+        "Hubungan <i>Take and Give</i> yang positif pun juga Budi alami.",
+        3000
+    );
+    await duaText("Adapula manfaat lainnya yang Budi terima.", 3000);
+    await duaText("Sepertiii....", 2000);
+    await duaText("Berbagi cerita dengan teman temannya.", 3000);
+    await duaText("Menolong, dan ditolong teman temannya.", 3000);
+    await duaText(
+        "Budi juga bisa berbagi kebahagiaan dengan teman temannya.",
+        3000
+    );
+    await duaText("Dan masih banyak lagi manfaat lainnya.", 3000);
+    await duaText("Bagi Budi, bersosialisasi itu menyenangkan.", 3000);
+    await duaText("");
 };
 
 const musicPlay1 = () => {
