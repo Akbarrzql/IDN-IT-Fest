@@ -1,4 +1,5 @@
 const timeout = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+let sessionComplete = false;
 
 const start = async() => {
     let startContent = document.getElementById("start-container");
@@ -14,7 +15,7 @@ const startSatu = async() => {
     let startMotivasi = document.getElementById("start-motivasi");
     startMotivasi.classList.remove("hidden");
     startMotivasi.classList.add("visible");
-    await timeout(4000);
+    await timeout(4500);
     startMotivasi.classList.remove("visible");
     startMotivasi.classList.add("hidden");
     imgSendiri1();
@@ -109,30 +110,27 @@ const removeMainStory = async() => {
     mainStory.classList.add("d-none");
 };
 const startTextAnimation = async() => {
-    await mainText("Ini adalah Budi.", 4000);
+    await mainText("Ini adalah Budi.", 3000);
     await mainText(
-        "Awalnya, Budi adalah orang yang pendiam, dan tidak mau bersosialisasi.",
-        4000
+        "Awalnya, Budi adalah orang yang pendiam dan tidak mau bersosialisasi.",
+        4500
     );
     await mainText(
-        "Selama masa pandemi, Budi banyak menghabiskan waktu di rumah.",
-        4000
+        "Ditambah selama pandemi, Ia banyak menghabiskan waktu di rumah,",
+        4500
     );
-    await mainText("Sehingga, Budi menjadi orang yang penyendiri. ", 4000);
-    await mainText(
-        "Mengakibatkan, Budi tidak mempunyai seorang teman pun.",
-        4000
-    );
-    await mainText("Seringkali Budi merasa kesepian.", 4000);
+    await mainText("sehingga  menjadi orang yang penyendiri,", 4000);
+    await mainText("dan, Ia tidak mempunyai seorang teman pun.", 4000);
+    await mainText("Seringkali Budi merasa kesepian.", 3500);
     await mainText("Budi juga ingin berubah, seperti anda.", 4000);
-    await mainText("Dia pelan pelan membangkitkan rasa percaya dirinya.", 4000);
+    await mainText("Dia pelan-pelan membangkitkan rasa percaya dirinya.", 4000);
     await mainText(
         "Membuka diri, mulai menjalin pertemanan dengan orang lain.",
-        4000
+        4500
     );
 
-    await mainText("Akhirnya, Budi membuka diri untuk mencari teman.", 4000);
-    await mainText("Tentunya di lingkungan yang positif.", 4000);
+    await mainText("Akhirnya, Budi membuka diri untuk mencari teman.", 4500);
+    await mainText("Tentunya di lingkungan yang positif.", 4500);
 
     // await mainText(
     //     "Karena merasa cocok, Budi mulai menemukan titik terang dalam bersosialisasi",
@@ -140,7 +138,7 @@ const startTextAnimation = async() => {
     // );
 
     imgSendiri2();
-    await mainText("Perlahan, Budi menemukan teman baru.", 3000);
+    await mainText("Perlahan, Budi menemukan teman baru.", 4500);
     await timeout(1000);
     await imgSendiri6();
     await timeout(500);
@@ -148,36 +146,64 @@ const startTextAnimation = async() => {
     await timeout(500);
     imgSendiri3();
     await timeout(500);
-    await mainText(
-        "Dari waktu ke waktu, akhirnya teman Budi menjadi banyak",
-        3000
-    );
+    await mainText("Perlahan namun pasti, teman Budi bertambah banyak", 4500);
     await imgSendiri5();
-    await timeout(3000);
+    await timeout(4500);
     removeMainStory();
     await timeout(2000);
 
-    await duaText("Sekarang, Budi sudah berubah", 3000);
+    await duaText("Sekarang, Budi sudah berubah", 4500);
     await duaText("Budi lebih bahagia.", 3000);
 
     sixPerson();
-    await duaText("Ini adalah hasil dari tekad untuk berubah Budi.", 3000);
-    await duaText("Budi dikelilingi oleh teman teman yang bermanfaat.", 3000);
+    await duaText("Ini adalah hasil dari tekad Budi untuk berubah.", 4500);
+    await duaText("Budi dikelilingi oleh teman teman yang bermanfaat.", 4500);
     await duaText(
-        "Hubungan <i>Take and Give</i> yang positif pun juga Budi alami.",
-        3000
+        "Hubungan <i>Give and Take</i> yang positif pun juga Budi alami.",
+        4500
     );
-    await duaText("Adapula manfaat lainnya yang Budi terima.", 3000);
+    await duaText("Adapula manfaat lainnya yang Budi terima.", 4000);
     await duaText("Sepertiii....", 2000);
-    await duaText("Berbagi cerita dengan teman temannya.", 3000);
-    await duaText("Menolong, dan ditolong teman temannya.", 3000);
+    await duaText("Berbagi cerita dengan teman temannya.", 4000);
+    await duaText("Menolong, dan ditolong mereka.", 4000);
+    await duaText("Budi juga bisa berbagi kebahagiaan dengan mereka.", 4000);
+    await duaText("Dan masih banyak lagi manfaat lainnya.", 4000);
     await duaText(
-        "Budi juga bisa berbagi kebahagiaan dengan teman temannya.",
-        3000
+        "Bagi Budi, bersosialisasi menjadi hal yang menyenangkan.",
+        4000
     );
-    await duaText("Dan masih banyak lagi manfaat lainnya.", 3000);
-    await duaText("Bagi Budi, bersosialisasi itu menyenangkan.", 3000);
-    await duaText("");
+    await duaText("Budi menyadari bahwa, ", 3000);
+
+    await duaText(
+        "sebagai manusia, kita tidak akan pernah bisa hidup sendiri.",
+        4500
+    );
+    await duaText(
+        "Kita memerlukan tempat untuk membagi segala hal yang kita <i>'punya.'</i>.",
+        4500
+    );
+    await duaText(
+        "<i>And even though it takes time, still, a small progress is better than nothing.</i>",
+        4500
+    );
+    await duaText(
+        "<i>So, take your time, enjoy the progress and cherish all the moments you <center>experience</center>.</i>",
+        4500
+    );
+    await duaText("<i>And, don't forget to be kind to yourself.</i>", 4500);
+    contentHasFinished();
+};
+
+const contentHasFinished = () => {
+    localStorage.setItem("hasCompleted", true);
+    sessionComplete = true;
+    let startContent = document.getElementById("start-container");
+    let startDescText = document.getElementById("start-desc-text");
+    startContent.classList.remove("hidden");
+    startDescText.innerText = "Mulai lagi?";
+    startDescText.fontFamily = "Jura";
+    startContent.classList.add("visible");
+    document.addEventListener("click", start);
 };
 
 const musicPlay1 = () => {
