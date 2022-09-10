@@ -1,5 +1,4 @@
 const timeout = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-let sessionComplete = false;
 
 const start = async() => {
     let startContent = document.getElementById("start-container");
@@ -19,16 +18,6 @@ const startSatu = async() => {
     startMotivasi.classList.remove("visible");
     startMotivasi.classList.add("hidden");
     imgSendiri1();
-};
-
-const contentMotivator = async() => {
-    let mainContent = document.getElementById("motivaator");
-    mainContent.classList.remove("d-none");
-    let contentMotivator = document.querySelectorAll("#contentMotivator");
-    for (i = 0; i < contentMotivator.length; i++) {
-        contentMotivator[i].classList.remove("hidden");
-        contentMotivator[i].classList.add("visible");
-    }
 };
 
 const imgSendiri1 = async() => {
@@ -134,15 +123,8 @@ const startTextAnimation = async() => {
         "Membuka diri, mulai menjalin pertemanan dengan orang lain.",
         4500
     );
-
     await mainText("Akhirnya, Budi membuka diri untuk mencari teman.", 4500);
     await mainText("Tentunya di lingkungan yang positif.", 4500);
-
-    // await mainText(
-    //     "Karena merasa cocok, Budi mulai menemukan titik terang dalam bersosialisasi",
-    //     100
-    // );
-
     imgSendiri2();
     await mainText("Perlahan, Budi menemukan teman baru.", 4500);
     await timeout(1000);
@@ -157,10 +139,8 @@ const startTextAnimation = async() => {
     await timeout(4500);
     removeMainStory();
     await timeout(2000);
-
     await duaText("Sekarang, Budi sudah berubah", 4500);
     await duaText("Budi lebih bahagia.", 3000);
-
     sixPerson();
     await duaText("Ini adalah hasil dari tekad Budi untuk berubah.", 4500);
     await duaText("Budi dikelilingi oleh teman teman yang bermanfaat.", 4500);
@@ -196,15 +176,12 @@ const startTextAnimation = async() => {
         "<i>So, take your time, enjoy the progress and cherish all the moments you <center>experience</center>.</i>",
         4500
     );
-
     await duaText("<i>And, don't forget to be kind to yourself.</i>", 4500);
     removeSixPerson();
     contentHasFinished();
 };
 
 const contentHasFinished = () => {
-    localStorage.setItem("hasCompleted", true);
-    sessionComplete = true;
     let startContent = document.getElementById("start-container");
     let startDescText = document.getElementById("start-desc-text");
     startContent.classList.remove("hidden");
