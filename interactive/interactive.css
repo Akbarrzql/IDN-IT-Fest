@@ -178,3 +178,102 @@ h2 {
     top: -30rem;
     left: -26rem;
 }
+
+/* tablet responsive */
+@media (max-width: 768px) {
+    .story-board-image {
+      width: 15rem;
+      height: 23rem;
+      object-fit: contain;
+    }
+  
+    .story-board-kata {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 8.7rem;
+      color: #000;
+    }
+  
+    .image-2 {
+      position: relative;
+      top: -25rem;
+      left: 0.1rem;
+      z-index: 2;
+    }
+  
+    .six-orang {
+      width: 15rem;
+      height: 10rem;
+    }
+  
+    .image-3 {
+      position: relative;
+      top: -45rem;
+      left: 25rem;
+      height: 10rem;
+    }
+  
+    .image-4 {
+      position: relative;
+      top: -45rem;
+      left: -2rem;
+      height: 10rem;
+    }
+  
+    .image-5 {
+      position: relative;
+      top: -47rem;
+      left: -10rem;
+      height: 10rem;
+    }
+  
+    .image-6 {
+      position: relative;
+      top: -46.5rem;
+      left: -8rem;
+      height: 10rem;
+    }
+  }
+
+@media (max-width: 425px) {
+    .story-board-image {
+      width: 13rem;
+      height: 9sssrem;
+      object-fit: contain;
+    }
+  
+    .story-board-kata {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #000;
+    }
+  
+    .six-orang {
+      width: 15rem;
+      height: 10rem;
+    }
+  
+    .image-3 {
+      position: relative;
+      top: -28rem;
+      left: 17rem;
+    }
+  
+    .image-4 {
+      position: relative;
+      top: -27rem;
+      left: -25rem;
+    }
+  
+    .image-5 {
+      position: relative;
+      top: -30rem;
+      left: -4rem;
+    }
+  
+    .image-6 {
+      position: relative;
+      top: -30rem;
+      left: -15rem;
+    }
+}
