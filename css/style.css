@@ -1524,6 +1524,7 @@ ol {
     background-color: #ffffff;
     color: #395b64;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .image-meditasi {
