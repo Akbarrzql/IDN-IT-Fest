@@ -54,7 +54,7 @@ const contentMotivator5 = async() => {
     let motivator5 = document.getElementById("contentMotivator5");
     motivator5.classList.remove("hidden");
     motivator5.classList.add("visible");
-    await timeout(1000);
+    await timeout(8000);
     contentHasFinished();
 };
 
@@ -146,7 +146,7 @@ const removeMainStory = async() => {
     let mainStory = document.getElementById("main-storyBoard");
     mainStory.classList.remove("visible");
     mainStory.classList.add("hidden");
-    await timeout(2000);
+    await timeout(2000); -
     mainStory.classList.add("d-none");
 };
 const startTextAnimation = async() => {
@@ -183,9 +183,7 @@ const startTextAnimation = async() => {
     await imgSendiri5();
     await timeout(4500);
     removeMainStory();
-    await timeout(2000);
-    await duaText("Sekarang, Budi sudah berubah", 4500);
-    await duaText("Budi lebih bahagia.", 3000);
+    s;
     sixPerson();
     await duaText("Ini adalah hasil dari tekad Budi untuk berubah.", 4500);
     await duaText("Budi dikelilingi oleh teman teman yang bermanfaat.", 4500);
@@ -226,16 +224,19 @@ const startTextAnimation = async() => {
     await timeout(2000);
     contentMotivator1();
 };
-
 const contentHasFinished = () => {
     removeContentMotivator();
+    clicker();
     let startContent = document.getElementById("start-container");
     let startDescText = document.getElementById("start-desc-text");
+    let mainStory = document.getElementById("main-storyBoard");
+    let containerMotivator = document.getElementById("motivaator");
+    containerMotivator.classList.remove("d-none");
+    mainStory.classList.remove("d-none");
     startContent.classList.remove("hidden");
     startDescText.innerText = "Mulai lagi?";
     startDescText.fontFamily = "Jura";
     startContent.classList.add("visible");
-    document.addEventListener("click", start);
 };
 
 const musicPlay1 = () => {
@@ -244,6 +245,10 @@ const musicPlay1 = () => {
 
 const musicPlay2 = () => {
     document.getElementById("audio2").play();
+};
+
+const clicker = () => {
+    document.addEventListener("click", start);
 };
 
 document.addEventListener("click", start);
